@@ -12,7 +12,7 @@ CREATE TABLE `account_admin`  (
 
 CREATE TABLE `account_customer`  (
   `id_user_customer` int NOT NULL AUTO_INCREMENT,
-  `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  `username` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `pass` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `id_status_acc` int NOT NULL,
   `id_city` int NOT NULL,
