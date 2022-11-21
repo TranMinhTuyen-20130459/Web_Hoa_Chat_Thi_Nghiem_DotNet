@@ -88,11 +88,71 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\admin\css\login.css" />
+    <Content Include="Assets\admin\css\main.css" />
+    <Content Include="Assets\admin\images\forgot.png" />
+    <Content Include="Assets\admin\images\team.jpg" />
+    <Content Include="Assets\admin\js\login.js" />
+    <Content Include="Assets\admin\js\main.js" />
+    <Content Include="Assets\admin\vendor\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Assets\admin\vendor\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Assets\admin\vendor\bootstrap\js\popper.min.js" />
+    <Content Include="Assets\admin\vendor\jquery\jquery-3.2.1.min.js" />
+    <Content Include="Assets\admin\vendor\plugins\chart.js" />
+    <Content Include="Assets\admin\vendor\plugins\pace.min.js" />
+    <Content Include="Assets\shop\css\animate.css" />
+    <Content Include="Assets\shop\css\bootstrap.css" />
+    <Content Include="Assets\shop\css\flex-slider.min.css" />
+    <Content Include="Assets\shop\css\font-awesome.css" />
+    <Content Include="Assets\shop\css\jquery-ui.css" />
+    <Content Include="Assets\shop\css\jquery.fancybox.min.css" />
+    <Content Include="Assets\shop\css\magnific-popup.css" />
+    <Content Include="Assets\shop\css\magnific-popup.min.css" />
+    <Content Include="Assets\shop\css\nice-select.css" />
+    <Content Include="Assets\shop\css\niceselect.css" />
+    <Content Include="Assets\shop\css\owl-carousel.css" />
+    <Content Include="Assets\shop\css\responsive.css" />
+    <Content Include="Assets\shop\css\slicknav.min.css" />
+    <Content Include="Assets\shop\css\style.css" />
+    <Content Include="Assets\shop\css\themify-icons.css" />
+    <Content Include="Assets\shop\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\shop\fonts\themify.svg" />
+    <Content Include="Assets\shop\images\labchemicals-logo-icon.png" />
+    <Content Include="Assets\shop\images\labchemicals-logo-non-bg.png" />
+    <Content Include="Assets\shop\images\labchemicals-logo.png" />
+    <Content Include="Assets\shop\images\labs\lab_01.jpg" />
+    <Content Include="Assets\shop\images\labs\login_start.jpg" />
+    <Content Include="Assets\shop\images\logo-google.png" />
+    <Content Include="Assets\shop\images\payments.png" />
+    <Content Include="Assets\shop\js\active.js" />
+    <Content Include="Assets\shop\js\bootstrap.min.js" />
+    <Content Include="Assets\shop\js\easing.js" />
+    <Content Include="Assets\shop\js\facnybox.min.js" />
+    <Content Include="Assets\shop\js\finalcountdown.min.js" />
+    <Content Include="Assets\shop\js\flex-slider.js" />
+    <Content Include="Assets\shop\js\gmap.min.js" />
+    <Content Include="Assets\shop\js\jquery-migrate-3.0.0.js" />
+    <Content Include="Assets\shop\js\jquery-ui.min.js" />
+    <Content Include="Assets\shop\js\jquery.min.js" />
+    <Content Include="Assets\shop\js\magnific-popup.js" />
+    <Content Include="Assets\shop\js\map-script.js" />
+    <Content Include="Assets\shop\js\nicesellect.js" />
+    <Content Include="Assets\shop\js\onepage-nav.min.js" />
+    <Content Include="Assets\shop\js\owl-carousel.js" />
+    <Content Include="Assets\shop\js\popper.min.js" />
+    <Content Include="Assets\shop\js\scrollup.js" />
+    <Content Include="Assets\shop\js\slicknav.min.js" />
+    <Content Include="Assets\shop\js\waypoints.min.js" />
+    <Content Include="Assets\shop\js\ytplayer.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -102,12 +162,34 @@
     <Content Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Assets\shop\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\shop\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\shop\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\shop\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\shop\fonts\themify.eot" />
+    <Content Include="Assets\shop\fonts\themify.ttf" />
+    <Content Include="Assets\shop\fonts\themify.woff" />
+    <Content Include="Areas\Admin\Views\Shared\_LayoutPage.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <None Include="packages.config" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Login\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
+    <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Shared\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{ec310563-e0b6-4af6-8c9f-d249cd18611e}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
