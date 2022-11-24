@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.33026.149
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hoa-Chat-Thi-Nghiem-ASP-NET-MVC", "Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC.csproj", "{AC0A3719-2D38-4AED-A1B2-828C41C38F02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectDB", "ConnectDB\ConnectDB.csproj", "{8B424BCB-C6BA-4874-B088-E834BAB1922D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "ConnectDB\Model.csproj", "{8B424BCB-C6BA-4874-B088-E834BAB1922D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

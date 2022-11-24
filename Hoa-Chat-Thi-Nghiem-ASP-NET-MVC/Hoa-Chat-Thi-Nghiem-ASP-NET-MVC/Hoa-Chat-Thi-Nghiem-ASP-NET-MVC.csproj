@@ -238,9 +238,9 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConnectDB\ConnectDB.csproj">
+    <ProjectReference Include="..\ConnectDB\Model.csproj">
       <Project>{8b424bcb-c6ba-4874-b088-e834bab1922d}</Project>
-      <Name>ConnectDB</Name>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

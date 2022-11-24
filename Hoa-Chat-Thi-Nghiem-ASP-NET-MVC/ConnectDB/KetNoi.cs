@@ -8,7 +8,7 @@ using System.Linq;
 
 using System.Text;
 
-namespace ConnectDB
+namespace Model
 {
 
     class KetNoi
