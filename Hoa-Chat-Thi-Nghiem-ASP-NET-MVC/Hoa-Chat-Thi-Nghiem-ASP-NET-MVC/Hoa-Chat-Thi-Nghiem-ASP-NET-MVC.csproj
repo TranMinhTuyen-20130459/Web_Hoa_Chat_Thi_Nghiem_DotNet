@@ -192,6 +192,7 @@
     <Compile Include="Areas\AdminRoot\Controllers\AdminRootHomeController.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminHomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Global.asax.cs">
@@ -223,6 +224,7 @@
     <Content Include="Areas\AdminRoot\Views\AdminRootHome\AdminManager.cshtml" />
     <Content Include="Areas\AdminRoot\Views\AdminRootHome\CustomerManager.cshtml" />
     <Content Include="Areas\AdminRoot\Views\AdminRootHome\Settings.cshtml" />
+    <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
@@ -238,8 +240,8 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConnectDB\Model.csproj">
-      <Project>{8b424bcb-c6ba-4874-b088-e834bab1922d}</Project>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{2bb4dfca-5c34-408e-ba95-d2ee2b29a0b2}</Project>
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
