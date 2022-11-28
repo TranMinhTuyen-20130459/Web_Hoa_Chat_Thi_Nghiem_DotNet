@@ -3,6 +3,7 @@ using Model.dao;
 using Model.model;
 using System;
 using System.Collections;
+using Model.service;
 
 namespace Program
 {
@@ -38,9 +39,18 @@ namespace Program
             }
             
         }
+
+        static void TestCheckLogin()
+        {
+            Admin admin = AdminService.checkLogin("tranminhtuyen", "20130459");
+            if (admin == null) { Console.WriteLine("null"); }
+            Console.WriteLine(admin);
+        }
+
         static void Main(string[] args)
         {
-            TestGetListAdmin();
+            //TestGetListAdmin();
+            TestCheckLogin();
             Console.Read();
         }
     }

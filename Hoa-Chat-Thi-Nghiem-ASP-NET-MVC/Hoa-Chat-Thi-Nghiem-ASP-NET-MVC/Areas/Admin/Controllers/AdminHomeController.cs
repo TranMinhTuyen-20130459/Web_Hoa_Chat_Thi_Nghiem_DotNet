@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Areas.Admin.Controllers
 {
@@ -13,28 +9,5 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Areas.Admin.Controllers
         {
             return View();
         }
-
-        public ActionResult BillsManager()
-        {
-            return View();
-        }
-
-        public ActionResult ProductsManager()
-        {
-            return View();
-        }
-
-        public ActionResult SalesReport()
-        {
-            return View();
-        }
-
-        public ActionResult Settings()
-        {
-            return View();
-        }
-
-
-
     }
 }

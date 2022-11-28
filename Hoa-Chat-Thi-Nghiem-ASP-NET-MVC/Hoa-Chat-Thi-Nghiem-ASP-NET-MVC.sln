@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hoa-Chat-Thi-Nghiem-ASP-NET
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{3B6DCA8A-6D5E-41D0-AD2E-DCC5CB28CA82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.csproj", "{103F4BD9-9F27-479B-A1A0-E41DDDDF2643}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Program\Test.csproj", "{103F4BD9-9F27-479B-A1A0-E41DDDDF2643}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
