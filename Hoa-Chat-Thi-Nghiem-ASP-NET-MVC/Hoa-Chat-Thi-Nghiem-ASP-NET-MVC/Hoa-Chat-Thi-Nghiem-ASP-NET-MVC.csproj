@@ -213,7 +213,6 @@
     <Content Include="Assets\shop\fonts\themify.ttf" />
     <Content Include="Assets\shop\fonts\themify.woff" />
     <Content Include="Areas\Admin\Views\Shared\_LayoutPage.cshtml" />
-    <Content Include="Areas\Admin\Views\AdminHome\AdminHome.cshtml" />
     <Content Include="Areas\Admin\Views\AdminHome\BillsManager.cshtml" />
     <Content Include="Areas\Admin\Views\AdminHome\ProductsManager.cshtml" />
     <Content Include="Areas\Admin\Views\AdminHome\Settings.cshtml" />
@@ -225,6 +224,7 @@
     <Content Include="Areas\AdminRoot\Views\AdminRootHome\CustomerManager.cshtml" />
     <Content Include="Areas\AdminRoot\Views\AdminRootHome\Settings.cshtml" />
     <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\AdminHome\Index.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
@@ -241,7 +241,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{2bb4dfca-5c34-408e-ba95-d2ee2b29a0b2}</Project>
+      <Project>{3b6dca8a-6d5e-41d0-ad2e-dcc5cb28ca82}</Project>
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>

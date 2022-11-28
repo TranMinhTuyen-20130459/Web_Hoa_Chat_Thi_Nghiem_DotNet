@@ -93,3 +93,6 @@ C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-AS
 C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\Model.dll
 C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\Model.pdb
 C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\Model.dll.config
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\MySql.Data.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\ZstdNet.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\MySql.Data.xml
