@@ -34,3 +34,8 @@ C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-AS
 C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\ConnectDB\obj\Debug\Model.csproj.CopyComplete
 C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\ConnectDB\obj\Debug\ConnectDB.exe
 C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\ConnectDB\obj\Debug\ConnectDB.pdb
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\ConnectDB\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\ConnectDB\obj\Debug\Model.csproj.SuggestedBindingRedirects.cache
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\ConnectDB\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\ConnectDB\obj\Debug\ConnectDB.exe
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\ConnectDB\obj\Debug\ConnectDB.pdb
