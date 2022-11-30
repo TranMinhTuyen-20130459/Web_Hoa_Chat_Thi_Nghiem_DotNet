@@ -197,13 +197,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Areas\AdminRoot\AdminRootAreaRegistration.cs" />
-    <Compile Include="Areas\AdminRoot\Controllers\AdminRootHomeController.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdminHomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\BillsManagerController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
     <Compile Include="Areas\Admin\Controllers\ProductsManagerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RootAdminsManagerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RootCustomersManagerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RootHomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RootSettingsController.cs" />
     <Compile Include="Areas\Admin\Controllers\SalesReportController.cs" />
     <Compile Include="Areas\Admin\Controllers\SettingsController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
@@ -227,12 +229,6 @@
     <Content Include="Assets\shop\fonts\themify.ttf" />
     <Content Include="Assets\shop\fonts\themify.woff" />
     <Content Include="Areas\Admin\Views\Shared\_LayoutPage.cshtml" />
-    <Content Include="Areas\AdminRoot\Views\web.config" />
-    <Content Include="Areas\AdminRoot\Views\Shared\_LayoutPageAdminRoot.cshtml" />
-    <Content Include="Areas\AdminRoot\Views\AdminRootHome\AdminRootHome.cshtml" />
-    <Content Include="Areas\AdminRoot\Views\AdminRootHome\AdminManager.cshtml" />
-    <Content Include="Areas\AdminRoot\Views\AdminRootHome\CustomerManager.cshtml" />
-    <Content Include="Areas\AdminRoot\Views\AdminRootHome\Settings.cshtml" />
     <Content Include="Areas\Admin\Views\BillsManager\BillsManager.cshtml" />
     <Content Include="Areas\Admin\Views\ProductsManager\ProductsManager.cshtml" />
     <Content Include="Areas\Admin\Views\SalesReport\SalesReport.cshtml" />
@@ -245,13 +241,17 @@
     <Content Include="Areas\Admin\Views\Settings\Index.cshtml" />
     <Content Include="Areas\Admin\Views\AdminHome\Index.cshtml" />
     <Content Include="Areas\Admin\Views\AdminHome\AdminHome.cshtml" />
+    <Content Include="Areas\Admin\Views\RootHome\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\RootAdminsManager\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\RootCustomersManager\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\RootSettings\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_RootLayoutPage.cshtml" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\AdminRoot\Models\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>

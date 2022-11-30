@@ -24,7 +24,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Areas.Admin.Controllers
                     int role_admin = admin.Id_role_admin;
                     if (role_admin == 1)
                     {
-
+                        return RedirectToAction("Index","RootHome");
                     }
                     else if (role_admin == 2)
                     {
