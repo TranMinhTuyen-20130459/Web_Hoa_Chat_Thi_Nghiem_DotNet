@@ -1,18 +1,361 @@
 ﻿
 @{
-    Layout = null;
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Share/Layout.cshtml";
+
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div> 
-        <h1>Đây là trang chủ dành cho khách hàng</h1>
+<section class="hero-slider">
+    <div class="single-slider">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-8 col-12">
+                    <div class="row">
+                        <div class="hero-text">
+                            <h1>
+                                <span>GIẢM ĐẾN 50% </span>Isoamyl acetate Emplura Merck Đức
+                            </h1>
+                            <p>
+                                Isoamyl acetate Emplura Là chất lỏng không màu. Được tạo mùi
+                                chuối trong thực phẩm, dùng làm dung môi vecni và sơn mài,
+                                dùng để kiểm tra hiệu quả của mặt nạ chống độc và mặt nạ
+                                khí. Độ tinh khiết: ≥ 99.0 % (a/a). Quy cách: Chai thủy tinh
+                                1000ml.
+                            </p>
+                            <div class="button">
+                                <a href="product-details.html" class="btn">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</body>
-</html>
+</section>
+<section class="newest-products">
+    <div class="container">
+        <div class="section-title">
+            <h2>Sản phẩm mới nhất</h2>
+        </div>
+        <div class="owl-carousel newest-slider">
+            @for (int i = 0; i < 4; i++)
+            {
+                <div class="single-product mt-0 mb-0 mr-3 ml-3">
+                    <div class="product-img">
+                        <a href="product-details.html">
+                            <img class="default-img" src="~/Assets/images/hoa_chat/axit-sunfuric.jpg" />
+                            <span class="hot">Hot</span>
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <a href="product-details.html">Acetic Acid 95%</a>
+                        <div class="rating">
+                            <i class="yellow fa fa-star"></i>
+                            <i class="yellow fa fa-star"></i>
+                            <i class="yellow fa fa-star"></i>
+                            <i class="yellow fa fa-star"></i>
+                            <i class="yellow fa fa-star"></i>
+                        </div>
+                        <div class="product-price">
+                            <span class="old">1,800,000đ</span>
+                            <span>1,500,000đ</span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<div class="product-area">
+    <div class="container">
+        <!-- Title -->
+        <div class="section-title">
+            <h2>Sản phẩm tiêu biểu</h2>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="product-info">
+                    <div class="nav-main">
+                        <!-- Tab Nav -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item d-inline-block">
+                                <a class="nav-link active" data-toggle="tab" href="#hoa-chat" role="tab">Hóa chất</a>
+                            </li>
+                            <li class="nav-item d-inline-block">
+                                <a class="nav-link" data-toggle="tab" href="#dung-cu" role="tab">Dụng cụ</a>
+                            </li>
+                            <li class="nav-item d-inline-block">
+                                <a class="nav-link" data-toggle="tab" href="#thiet-bi" role="tab">Thiết bị</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <!-- Hóa Chất -->
+                        <div class="tab-pane fade show active" id="hoa-chat" role="tabpanel">
+                            <div class="tab-single">
+                                <div class="row">
+                                    @for (int i = 0; i < 8; i++)
+                                    {
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img" src="~/Assets/images/hoa_chat/hydrochloric.jpg" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-content">
+                                                    <a href="product-details.html">Acid Hydrochloric 89% - HCl</a>
+                                                    <div class="rating">
+                                                        <i class="yellow fa fa-star"></i>
+                                                        <i class="yellow fa fa-star"></i>
+                                                        <i class="yellow fa fa-star"></i>
+                                                        <i class="yellow fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span>1,200,000đ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dụng Cụ -->
+                        <div class="tab-pane fade" id="dung-cu" role="tabpanel">
+                            <div class="tab-single">
+                                <div class="row">
+                                    @for (int i = 0; i < 8; i++)
+                                    {
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img" src="~/Assets/images/dung_cu/binh-thi-nghiem-1.png" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-content">
+                                                    <a href="product-details.html">Bình thí nghiệm</a>
+                                                    <div class="rating">
+                                                        <i class="yellow fa fa-star"></i>
+                                                        <i class="yellow fa fa-star"></i>
+                                                        <i class="yellow fa fa-star"></i>
+                                                        <i class="yellow fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span>30,000đ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Thiết Bị -->
+                        <div class="tab-pane fade" id="thiet-bi" role="tabpanel">
+                            <div class="tab-single">
+                                <div class="row">
+                                    @for (int i = 0; i < 8; i++)
+                                    {
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="product-details.html">
+                                                        <img class="default-img" src="~/Assets/images/thiet_bi/kinh-huynh-quang-1.jpg" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-content">
+                                                    <a href="product-details.html">Kính hiển vi điện tử</a>
+                                                    <div class="rating">
+                                                        <i class="yellow fa fa-star"></i>
+                                                        <i class="yellow fa fa-star"></i>
+                                                        <i class="yellow fa fa-star"></i>
+                                                        <i class="yellow fa fa-star"></i>
+                                                        <i class="fa fa-star"></i>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span>1,500,000,000đ</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== SHOP HOME LIST =====  -->
+<section class="shop-home-list">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="shop-list-title">
+                    <h1>Giảm giá</h1>
+                </div>
+                @for (int i = 0; i < 3; i++)
+                {
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image">
+                                    <a href="product-details.html">
+                                        <img src="~/Assets/images/thiet_bi/kinh-hien-vi-sinh-hoc-1.jpg" />
+                                    </a>
+                                    <a href="product-details.html" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="content pt-5">
+                                    <a class="pname" href="product-details.html">Kính hiển vi điện tử</a>
+                                    <p class="price">1,200,000đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="shop-list-title">
+                    <h1>Bán chạy</h1>
+                </div>
+                @for (int i = 0; i < 3; i++)
+                {
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image">
+                                    <a href="product-details.html">
+                                        <img src="~/Assets/images/hoa_chat/calcium-hydroxide.jpg" />
+                                    </a>
+                                    <a href="product-details.html" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="content pt-5">
+                                    <a class="pname" href="product-details.html">Calcium Hydroxide</a>
+                                    <p class="price">450,000đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="shop-list-title">
+                    <h1>Xem nhiều</h1>
+                </div>
+                @for (int i = 0; i < 3; i++)
+                {
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image">
+                                    <a href="product-details.html">
+                                        <img src="~/Assets/images/hoa_chat/hydrochloric.jpg" />
+                                    </a>
+                                    <a href="product-details.html" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="content pt-5">
+                                    <a class="pname" href="product-details.html">Acid Hydrochloric 89%</a>
+                                    <p class="price">2,200,000đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== COUNTDOWN ===== -->
+<section class="countdown">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="image">
+                    <img class="default-img" src="~/Assets/images/hoa_chat/thuoc-thu-2.jpg" />
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="content">
+                    <div class="heading-block">
+                        <p class="small-title">Giảm giá trong ngày</p>
+                        <h3 class="title">Thuốc thử nguyên chất</h3>
+                        <p>
+                            Thuốc thử nguyên chất Calsio Delatiumn 120-26P 15% được sản
+                            xuất theo tiêu chuẩn quốc tế IAEA đảm báo chất lượng 100%.
+                        </p>
+                        <h1 class="price">660,000đ <s>900,000đ</s></h1>
+                        <div class="clearfix" data-countdown="2021/02/30"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SHOP BLOG =====  -->
+<section class="shop-blog">
+    <div class="container">
+        <div class="section-title">
+            <h2>Tin mới nhất</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="shop-single-blog">
+                    <a href="blog.html">
+                        <img src="~/Assets/images/tin_tuc/370x300/tin_01.jpg" />
+                    </a>
+                    <div class="content p-4">
+                        <p class="date">Thứ Hai, ngày 30/9/2022</p>
+                        <a href="blog.html" class="title">Bộ Hóa chất áp giá các sản phẩm được nhập khẩu từ Mỹ...</a>
+                        <a href="blog.html" class="more-btn">Tiếp tục đọc</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="shop-single-blog">
+                    <a href="blog.html">
+                        <img src="~/Assets/images/tin_tuc/370x300/tin_02.jpg" />
+                    </a>
+                    <div class="content p-4">
+                        <p class="date">Thứ Ba, ngày 31/9/2022</p>
+                        <a href="blog.html" class="title">Công bố chương trình khuyến mãi sản phẩm cho thí nghiệm...</a>
+                        <a href="blog.html" class="more-btn">Tiếp tục đọc</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="shop-single-blog">
+                    <a href="blog.html">
+                        <img src="~/Assets/images/tin_tuc/370x300/tin_03.jpg" />
+                    </a>
+                    <div class="content p-4">
+                        <p class="date">Chủ Nhật, ngày 29/9/2022</p>
+                        <a href="blog.html" class="title">Tổ chức huy hoạch 200 hecta đất để xây dựng nhà máy chế...</a>
+                        <a href="blog.html" class="more-btn">Tiếp tục đọc</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

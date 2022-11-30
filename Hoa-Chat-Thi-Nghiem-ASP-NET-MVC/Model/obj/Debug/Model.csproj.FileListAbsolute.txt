@@ -38,3 +38,43 @@ C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-AS
 C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\obj\Debug\Model.csproj.CopyComplete
 C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\obj\Debug\Model.dll
 C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\obj\Debug\Model.pdb
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\Model.dll.config
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\Model.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\Model.pdb
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\BouncyCastle.Crypto.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\EntityFramework.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\EntityFramework.SqlServer.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\Google.Protobuf.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\K4os.Compression.LZ4.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\K4os.Hash.xxHash.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\MySql.Data.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\MySql.Data.EntityFramework.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Buffers.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Memory.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Numerics.Vectors.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\ZstdNet.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\BouncyCastle.Crypto.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\EntityFramework.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\EntityFramework.SqlServer.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\Google.Protobuf.pdb
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\Google.Protobuf.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\K4os.Compression.LZ4.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\K4os.Hash.xxHash.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\MySql.Data.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\MySql.Data.EntityFramework.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Buffers.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Memory.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Numerics.Vectors.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\obj\Debug\Model.csproj.CopyComplete
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\obj\Debug\Model.dll
+E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\obj\Debug\Model.pdb

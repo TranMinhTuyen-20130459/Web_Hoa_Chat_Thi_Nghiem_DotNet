@@ -1,0 +1,14 @@
+﻿/*SHOP - HOME*/
+
+.countdown .image img {
+    width: 850px;
+    height: 510px;
+}
+img.custom-image-product {
+    width: 100%;
+    height: 600px;
+}
+.hero-slider .single-slider {
+    background-image: url('../images/labs/lab_01.jpg') !important;
+    
+}

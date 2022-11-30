@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Share/LayoutLogin.cshtml";
+}
+
+<div class="breadcrumbs py-4">
+    <div class="container text-left">
+        <ul class="bread-list d-inline-block">
+            <li class="d-inline-block text-capitalize"><a href="/Home/Index">Trang chủ<i class="ti-arrow-right mx-2"></i></a></li>
+            <li class="d-inline-block text-capitalize"><a href="#">Đăng nhập</a></li>
+        </ul>
+    </div>
+</div>
+<section class="form-input py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-12 text-center">
+                <img width="80%" src="~/Assets/shop/images/labs/login_start.jpg" />
+            </div>
+            <div class="col-lg-5 col-md-5 col-12">
+                <div class="h-100 d-flex align-items-center">
+                    <form class="m-0 p-5 text-center">
+                        <h5 class="mb-4">Đăng Nhập</h5>
+                        <input class="w-100 mb-3" type="username" placeholder="Email">
+                        <input class="w-100 mb-4" type="password" placeholder="Mật khẩu">
+                        <button class="next w-100">Đăng nhập</button>
+                        <span class="or d-inline-block text-uppercase my-4 position-relative">Hoặc</span>
+                        <a class="google d-flex justify-content-center w-100 mb-3"><img width="25px" class="mr-2" src="images/logo-google.png" alt="">Google</a>
+                        <span class="shotcut">
+                            <a class="mr-3" href="/Account/ForgotPassword">Quên mật khẩu?</a>
+                            <a href="/Account/Register">Đăng ký?</a>
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
