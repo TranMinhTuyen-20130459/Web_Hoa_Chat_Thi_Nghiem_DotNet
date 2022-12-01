@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
 {
@@ -12,13 +8,17 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
         public ActionResult Login()
         {
             return View();
-        }public ActionResult Logout()
+
+        }
+        public ActionResult Logout()
         {
             return View();
-        }public ActionResult ForgotPassword()
+        }
+        public ActionResult ForgotPassword()
         {
             return View();
-        }public ActionResult Register()
+        }
+        public ActionResult Register()
         {
             return View();
         }

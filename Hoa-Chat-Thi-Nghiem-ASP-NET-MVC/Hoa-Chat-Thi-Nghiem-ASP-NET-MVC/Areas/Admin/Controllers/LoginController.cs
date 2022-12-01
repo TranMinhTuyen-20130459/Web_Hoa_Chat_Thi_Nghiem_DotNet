@@ -1,4 +1,4 @@
-﻿using Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Areas.Admin.Models;
+﻿ using Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Areas.Admin.Models;
 using Model.service;
 using System.Web.Mvc;
 
@@ -20,10 +20,12 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Areas.Admin.Controllers
                 if (admin != null)
                 {
 
-                    Session.Add("ADMIN_SESSION",admin);
+                    Session["ADMIN_SESSION"] = admin;
+                    
                     int role_admin = admin.Id_role_admin;
                     if (role_admin == 1)
                     {
+                   
                         return RedirectToAction("Index","RootHome");
                     }
                     else if (role_admin == 2)

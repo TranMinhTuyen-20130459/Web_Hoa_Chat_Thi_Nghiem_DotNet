@@ -100,10 +100,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dao\AdminDAO.cs" />
+    <Compile Include="dao\CustomerDAO.cs" />
     <Compile Include="db\DBConnection.cs" />
     <Compile Include="model\Admin.cs" />
+    <Compile Include="model\Customer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="service\AdminService.cs" />
+    <Compile Include="service\CustomerService.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

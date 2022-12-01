@@ -4,6 +4,9 @@ using Model.model;
 using System;
 using System.Collections;
 using Model.service;
+using Model.dao;
+using Model.entity;
+using Model.db;
 
 namespace Program
 {
@@ -47,10 +50,22 @@ namespace Program
             Console.WriteLine(admin);
         }
 
+        static void TestGetCustomers()
+        {
+            CustomerDAO dao = new CustomerDAO();
+            ArrayList customers= dao.getCustomers("tranminhtuyen");
+            foreach(Customer c in customers)
+            {
+                Console.WriteLine(c);
+            }
+
+        }
+
         static void Main(string[] args)
         {
             //TestGetListAdmin();
-            TestCheckLogin();
+            //TestCheckLogin();
+            TestGetCustomers();
             Console.Read();
         }
     }

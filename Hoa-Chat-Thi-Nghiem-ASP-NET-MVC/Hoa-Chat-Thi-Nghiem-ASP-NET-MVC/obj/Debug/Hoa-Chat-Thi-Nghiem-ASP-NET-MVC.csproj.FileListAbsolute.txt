@@ -198,3 +198,5 @@ E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Ho
 E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\obj\Debug\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC.csproj.CopyComplete
 E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\obj\Debug\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC.dll
 E:\DevPrograms\DotNET_project_CK\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\obj\Debug\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC.pdb
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\CKFinder.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\CKFinder.pdb

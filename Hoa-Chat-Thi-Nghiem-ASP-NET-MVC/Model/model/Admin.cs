@@ -14,12 +14,6 @@ namespace Model.model
         private int id_status_acc;
         private string fullname;
 
-        public string Username { get => username; set => username = value; }
-        public string PassAD { get => passAD; set => passAD = value; }
-        public int Id_role_admin { get => id_role_admin; set => id_role_admin = value; }
-        public int Id_status_acc { get => id_status_acc; set => id_status_acc = value; }
-        public string Fullname { get => fullname; set => fullname = value; }
-
         public Admin(string username, string passAD, int id_role_admin, int id_status_acc, string fullname)
         {
             this.username = username;
@@ -28,6 +22,12 @@ namespace Model.model
             this.id_status_acc = id_status_acc;
             this.fullname = fullname;
         }
+
+        public string Username { get => username; set => username = value; }
+        public string PassAD { get => passAD; set => passAD = value; }
+        public int Id_role_admin { get => id_role_admin; set => id_role_admin = value; }
+        public int Id_status_acc { get => id_status_acc; set => id_status_acc = value; }
+        public string Fullname { get => fullname; set => fullname = value; }
 
         public override string ToString()
         {
