@@ -23,7 +23,8 @@ namespace Model.db
         // đối tượng này chuyên dùng để kết nối đến CSDL
         public DBConnection()
         {
-            connect = new MySqlConnection(DBConnection.connString());
+            connect = new MySqlConnection(DBConnection.connString()); // khởi tạo
+            connect.Open(); // mở kết nối đến MySQL
         }
 
         public static DBConnection GetInstall()

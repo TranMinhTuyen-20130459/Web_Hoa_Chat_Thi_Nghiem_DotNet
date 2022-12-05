@@ -1,12 +1,9 @@
 ﻿using Model.db;
 using Model.dao;
-using Model.model;
 using System;
 using System.Collections;
 using Model.service;
-using Model.dao;
 using Model.entity;
-using Model.db;
 
 namespace Program
 {
@@ -32,6 +29,17 @@ namespace Program
             
         }
 
+        static void TestGetCustomers()
+        {
+            CustomerDAO dao = new CustomerDAO();
+            ArrayList customers= dao.getCustomers("tranminhtuyen");
+            foreach(Customer c in customers)
+            {
+                Console.WriteLine(c);
+            }
+
+        }
+
         static void TestGetListAdmin()
         {
             AdminDAO adminDAO = new AdminDAO();
@@ -50,22 +58,20 @@ namespace Program
             Console.WriteLine(admin);
         }
 
-        static void TestGetCustomers()
-        {
-            CustomerDAO dao = new CustomerDAO();
-            ArrayList customers= dao.getCustomers("tranminhtuyen");
-            foreach(Customer c in customers)
-            {
-                Console.WriteLine(c);
-            }
+        static void TestInsertProduct() { }
 
-        }
+        static void TestInsertPriceProduct() { }
+
+        static void TestGetIdProduct() { }
+
+        static void TestAddNewProduct() { }
+
 
         static void Main(string[] args)
         {
             //TestGetListAdmin();
             //TestCheckLogin();
-            TestGetCustomers();
+            //TestGetCustomers();
             Console.Read();
         }
     }

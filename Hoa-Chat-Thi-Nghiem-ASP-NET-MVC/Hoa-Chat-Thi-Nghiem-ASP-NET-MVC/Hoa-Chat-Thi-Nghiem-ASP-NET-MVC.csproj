@@ -1255,18 +1255,12 @@
   <ItemGroup>
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\_LayoutPage.cshtml" />
-    <Content Include="Areas\Admin\Views\BillsManager\BillsManager.cshtml" />
-    <Content Include="Areas\Admin\Views\ProductsManager\ProductsManager.cshtml" />
-    <Content Include="Areas\Admin\Views\SalesReport\SalesReport.cshtml" />
-    <Content Include="Areas\Admin\Views\Settings\Settings.cshtml" />
-    <Content Include="Areas\Admin\Views\Login\Login.cshtml" />
     <Content Include="Areas\Admin\Views\BillsManager\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
     <Content Include="Areas\Admin\Views\ProductsManager\Index.cshtml" />
     <Content Include="Areas\Admin\Views\SalesReport\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Settings\Index.cshtml" />
     <Content Include="Areas\Admin\Views\AdminHome\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\AdminHome\AdminHome.cshtml" />
     <Content Include="Areas\Admin\Views\RootHome\Index.cshtml" />
     <Content Include="Areas\Admin\Views\RootAdminsManager\Index.cshtml" />
     <Content Include="Areas\Admin\Views\RootCustomersManager\Index.cshtml" />
