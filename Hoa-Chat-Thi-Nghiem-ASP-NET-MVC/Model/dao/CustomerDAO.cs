@@ -18,8 +18,7 @@ namespace Model.dao
             {
                 MySqlCommand command = connectDB.GetMySqlCommand(); // đối tượng để thực thi câu lệnh sql
                 command.CommandText = query;
-                command.Parameters.AddWithValue("@username", username);
-                connectDB.GetConnect().Open(); 
+                command.Parameters.AddWithValue("@username", username);                
                 MySqlDataReader reader = command.ExecuteReader();
                 if (reader.HasRows)
                 {

@@ -1,6 +1,6 @@
 ﻿
 using Model.db;
-using Model.model;
+using Model.entity;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections;
@@ -21,8 +21,7 @@ namespace Model.dao
                 String stringQuery = "select username,passwordAD,id_role_admin,id_status_acc,fullname from account_admin where username = @username";
                 MySqlCommand cmd = connectDB.GetMySqlCommand(); // tạo ra đối tượng command làm nhiệm vụ thực thi câu lệnh sql
                 cmd.CommandText = stringQuery;
-                cmd.Parameters.AddWithValue("@username", username);
-                connectDB.GetConnect().Open(); // mở kết nối đến mysql
+                cmd.Parameters.AddWithValue("@username", username);             
                 MySqlDataReader reader = cmd.ExecuteReader();
                 if (reader.HasRows)
                 {

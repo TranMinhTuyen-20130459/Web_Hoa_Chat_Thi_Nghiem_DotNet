@@ -1,5 +1,5 @@
 ﻿using Model.dao;
-using Model.model;
+using Model.entity;
 using System.Collections;
 
 namespace Model.service
@@ -7,6 +7,7 @@ namespace Model.service
     public class AdminService
     {
 
+        // đăng nhập cho Admin
         public static Admin checkLogin(string username, string password)
         {
             AdminDAO dao = new AdminDAO();
