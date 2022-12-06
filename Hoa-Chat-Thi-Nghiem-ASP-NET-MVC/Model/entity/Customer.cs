@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Model.model
+namespace Model.entity
 {
     public class Customer
     {

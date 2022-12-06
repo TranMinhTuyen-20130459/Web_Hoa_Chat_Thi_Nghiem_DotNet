@@ -53,6 +53,7 @@ namespace Model.dao
             }
             catch (MySqlException e)
             {
+                System.Console.WriteLine(e.Message);
                 return false;
             }
             return false;
@@ -125,7 +126,9 @@ namespace Model.dao
                 if (reader.HasRows)
                 {
                     reader.Read();
-                    return reader.GetInt32("id_product");
+                    int id = reader.GetInt32("id_product");
+                    reader.Close();
+                    return id;
                 }
             }
             catch (MySqlException e)
@@ -209,7 +212,7 @@ namespace Model.dao
                     }
                 }
             }
-            catch(MySqlException e)
+            catch (MySqlException e)
             {
                 return null;
             }

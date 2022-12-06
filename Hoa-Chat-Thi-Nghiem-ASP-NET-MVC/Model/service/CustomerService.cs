@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-﻿using Model.dao;
-using Model.model;
+using Model.dao;
+using Model.entity;
 using System.Collections;
-=======
-﻿using Model.entity;
-using System;
->>>>>>> d2caced0d22462388a1af76399239d46332fedd9
+
 
 namespace Model.service
 {
