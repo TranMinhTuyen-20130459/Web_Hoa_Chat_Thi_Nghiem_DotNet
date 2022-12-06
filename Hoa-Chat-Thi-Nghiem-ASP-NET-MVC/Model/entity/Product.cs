@@ -1,6 +1,6 @@
 ﻿namespace Model.entity
 {
-    class Product
+    public class Product
     {
         private string name_product;
         private string desc_product;

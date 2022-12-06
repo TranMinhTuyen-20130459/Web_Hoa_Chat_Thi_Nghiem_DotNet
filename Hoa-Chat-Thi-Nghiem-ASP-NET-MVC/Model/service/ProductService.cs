@@ -16,7 +16,12 @@ namespace Model.service
             return false;
         }
 
-        public static bool updateProduct(Product p,Admin admin)
+        public static bool updateProduct(Product p, Admin admin)
+        {
+            return false;
+        }
+
+        public static bool deleteProduct(Product p,Admin admin)
         {
             return false;
         }
