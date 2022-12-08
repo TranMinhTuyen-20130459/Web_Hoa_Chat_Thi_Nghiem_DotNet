@@ -1,6 +1,7 @@
-﻿using System;
-using Model.entity;
+﻿using Model.entity;
 using Model.service;
+using System;
+using System.Collections;
 
 
 namespace Program.service
@@ -24,7 +25,7 @@ namespace Program.service
             Product p_1 = new Product("IPHONE 16 PRO", "day la san pham cua apple", "/DATA/456.png", 1000, 1, 1, 3, 15000000, 9800000);
             Admin admin = new Admin("tinh_kun", "tuyen123", 1, 1, "Tran Minh Tinh");
             p_1.Id_product = 36;
-            Console.WriteLine(ProductService.updateProduct(p_1,admin));
+            Console.WriteLine(ProductService.updateProduct(p_1, admin));
         }
 
         public static void TestDeleteProduct()
@@ -32,7 +33,23 @@ namespace Program.service
             Product p_1 = new Product("IPHONE 16 PRO", "day la san pham cua apple", "/DATA/456.png", 1000, 1, 1, 3, 15000000, 9800000);
             Admin admin = new Admin("tinh_kun", "tuyen123", 1, 1, "Tran Minh Tinh");
             p_1.Id_product = 36;
-            Console.WriteLine(ProductService.deleteProduct(p_1,admin));
+            Console.WriteLine(ProductService.deleteProduct(p_1, admin));
+        }
+
+        public static void TestGetListTypeStatusSupplier()
+        {
+            ArrayList result = ProductService.getListTypeStatusSupplier();
+            Console.WriteLine(result.Count);
+            foreach (ArrayList list in result)
+            {
+                foreach (var item in list)
+                {
+                    Console.WriteLine(item);
+                }
+                Console.WriteLine("---------------------------");
+            }
+
+
         }
 
     }

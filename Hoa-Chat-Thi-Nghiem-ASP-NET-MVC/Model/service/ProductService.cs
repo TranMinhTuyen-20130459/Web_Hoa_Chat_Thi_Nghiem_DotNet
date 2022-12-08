@@ -2,6 +2,7 @@
 using Model.db;
 using Model.entity;
 using System;
+using System.Collections;
 
 namespace Model.service
 {
@@ -49,7 +50,7 @@ namespace Model.service
             {
                 bool checkUpdateProduct = dao.updateProduct(connectDB, p, admin.Username);
                 bool checkUpdatePrice = dao.insertPriceProduct(connectDB, p, admin.Username);
-                if(checkUpdateProduct || checkUpdatePrice)
+                if (checkUpdateProduct || checkUpdatePrice)
                 {
                     return true;
                 }
@@ -72,8 +73,8 @@ namespace Model.service
             try
             {
                 return dao.deleteProduct(connectDB, p, admin.Username);
-            } 
-            catch(Exception e)
+            }
+            catch (Exception e)
             {
                 return false;
             }
@@ -81,6 +82,37 @@ namespace Model.service
             {
                 connectDB.UnInstall();
             }
+        }
+
+        public static ArrayList getListTypeStatusSupplier()
+        {
+            /*
+             *B1: lấy ra danh sách các loại sản phẩm
+             *B2: lấy ra danh sách các trạng thái sản phẩm
+             *B3: lấy ra danh sách các nhà cung cấp
+             *B4: thêm vào arraylist 
+             */
+            ArrayList result = new ArrayList();
+            DBConnection connectDB = DBConnection.GetInstall();
+            ProductDAO dao = new ProductDAO();
+            try
+            {
+                ArrayList listType = dao.getListTypeProduct(connectDB);
+                ArrayList listStatus = dao.getListStatusProduct(connectDB);
+                ArrayList listSupplier = dao.getListSupplier(connectDB);
+                result.Add(listType);
+                result.Add(listStatus);
+                result.Add(listSupplier);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                connectDB.UnInstall();
+            }
+            return result;
         }
     }
 }

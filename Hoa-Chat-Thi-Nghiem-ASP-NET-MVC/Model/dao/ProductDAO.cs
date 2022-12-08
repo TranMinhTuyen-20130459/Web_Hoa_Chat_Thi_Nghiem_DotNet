@@ -156,11 +156,13 @@ namespace Model.dao
                         TypeProduct tp = new TypeProduct(id_type, name_type);
                         result.Add(tp);
                     }
+                    reader.Close();
                 }
             }
             catch (MySqlException e)
             {
-                return null;
+                System.Console.WriteLine(e.Message);
+                return result;
             }
             return result;
         }
@@ -183,10 +185,12 @@ namespace Model.dao
                         StatusProduct sp = new StatusProduct(id_status, name_status);
                         result.Add(sp);
                     }
+                    reader.Close();
                 }
             }
             catch (MySqlException e)
             {
+                System.Console.WriteLine(e.Message);
                 return null;
             }
             return result;
@@ -210,11 +214,13 @@ namespace Model.dao
                         Supplier sl = new Supplier(id_supplier, name_supplier);
                         result.Add(sl);
                     }
+                    reader.Close();
                 }
             }
             catch (MySqlException e)
             {
-                return null;
+                System.Console.WriteLine(e.Message);
+                return result;
             }
 
             return result;
