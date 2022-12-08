@@ -1,14 +1,16 @@
-﻿using Model.db;
-using Model.dao;
+﻿using Model.dao;
+using Model.db;
+using Model.entity;
+using Model.service;
 using System;
 using System.Collections;
-using Model.service;
-using Model.entity;
+using System.Text;
+using Program.dao;
+using Program.service;
 
 namespace Program
 {
     class Program
-
 
     {
         static void TestConnectMySQL()
@@ -26,14 +28,14 @@ namespace Program
                 Console.WriteLine("Error " + e.Message);
 
             }
-            
+
         }
 
         static void TestGetCustomers()
         {
             CustomerDAO dao = new CustomerDAO();
-            ArrayList customers= dao.getCustomers("tranminhtuyen");
-            foreach(Customer c in customers)
+            ArrayList customers = dao.getCustomers("tranminhtuyen");
+            foreach (Customer c in customers)
             {
                 Console.WriteLine(c);
             }
@@ -44,11 +46,11 @@ namespace Program
         {
             AdminDAO adminDAO = new AdminDAO();
             ArrayList admins = adminDAO.ListAdmin("nguyenphutai");
-            foreach(Admin a in admins)
+            foreach (Admin a in admins)
             {
                 Console.WriteLine(a);
             }
-            
+
         }
 
         static void TestCheckLogin()
@@ -57,21 +59,27 @@ namespace Program
             if (admin == null) { Console.WriteLine("null"); }
             Console.WriteLine(admin);
         }
-
-        static void TestInsertProduct() { }
-
-        static void TestInsertPriceProduct() { }
-
-        static void TestGetIdProduct() { }
-
-        static void TestAddNewProduct() { }
-
-
+     
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
             //TestGetListAdmin();
             //TestCheckLogin();
             //TestGetCustomers();
+
+            //TestProductDAO.TestInsertProduct();
+            //TestProductDAO.TestInsertPriceProduct();
+            //TestProductDAO.TestUpdateProduct();
+            //TestProductDAO.TestDeleteProduct();
+            //TestProductDAO.TestGetIdProduct();
+            //TestProductDAO.TestGetListTypeProduct();
+            //TestProductDAO.TestGetListStatusProduct();
+            //TestProductDAO.TestGetListSupplier();
+
+            //TestProductService.TestAddNewProduct();
+            //TestProductService.TestUpdateProduct();
+            //TestProductService.TestDeleteProduct();
+            TestProductService.TestGetListTypeStatusSupplier();
             Console.Read();
         }
     }

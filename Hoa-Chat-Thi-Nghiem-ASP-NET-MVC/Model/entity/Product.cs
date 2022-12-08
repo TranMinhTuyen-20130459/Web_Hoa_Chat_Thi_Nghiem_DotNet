@@ -1,6 +1,6 @@
 ﻿namespace Model.entity
 {
-    class Product
+    public class Product
     {
         private string name_product;
         private string desc_product;
@@ -15,13 +15,19 @@
 
         public Product(string name_product, string desc_product, string url_img_product, int quantity_product, int id_type, int id_status, int id_supplier)
         {
-            this.Name_product = name_product;
-            this.Desc_product = desc_product;
-            this.Url_img_product = url_img_product;
-            this.Quantity_product = quantity_product;
-            this.Id_type = id_type;
-            this.Id_status = id_status;
-            this.Id_supplier = id_supplier;
+            this.name_product = name_product;
+            this.desc_product = desc_product;
+            this.url_img_product = url_img_product;
+            this.quantity_product = quantity_product;
+            this.id_type = id_type;
+            this.id_status = id_status;
+            this.id_supplier = id_supplier;
+        }
+
+        public Product(string name_product, string desc_product, string url_img_product, int quantity_product, int id_type, int id_status, int id_supplier, int listed_price, int current_price) : this(name_product, desc_product, url_img_product, quantity_product, id_type, id_status, id_supplier)
+        {
+            this.listed_price = listed_price;
+            this.current_price = current_price;
         }
 
         public Product(int id_product, int listed_price, int current_price)
@@ -30,7 +36,7 @@
             this.listed_price = listed_price;
             this.current_price = current_price;
         }
-
+ 
         public string Name_product { get => name_product; set => name_product = value; }
         public string Desc_product { get => desc_product; set => desc_product = value; }
         public string Url_img_product { get => url_img_product; set => url_img_product = value; }
