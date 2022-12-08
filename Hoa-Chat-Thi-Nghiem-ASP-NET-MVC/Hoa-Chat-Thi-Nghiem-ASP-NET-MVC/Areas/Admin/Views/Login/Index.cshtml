@@ -28,16 +28,37 @@
                     @Html.AntiForgeryToken() <!--Tránh các request giả mạo-->
                     <div class="wrap-input">
                         <!-- <input class="input" type="text" placeholder="Tài khoản quản trị" name="username" id="field-username"> -->
+<<<<<<< HEAD
+                        @Html.TextBoxFor(model => model.Username, new
+                        {
+                            @class = "input",
+                            @autofocus = "autofocus",
+                       @id = "field-username",
+                            @placeholder = "Tài khoản quản trị"
+                        })
+=======
                         @Html.TextBoxFor(model => model.Username, new { @class = "input", @autofocus = "autofocus",
                        @id = "field-username", @placeholder = "Tài khoản quản trị" })
                         @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+>>>>>>> a61f1f33ca0d3b323c638326d9691f73be8d5c67
                         <span class="symbol-input d-flex align-items-center pl-4"><i class='bx bx-user'></i></span>
                     </div>
                     <div class="wrap-input">
                         <!-- <input autocomplete="off" class="input" type="password" placeholder="Mật khẩu" name="password" id="field-password"> -->
+<<<<<<< HEAD
+                        @Html.PasswordFor(model => model.Password, new
+                        {
+                            @class = "input",
+                            @id = "field-password",
+                        @placeholder = "Mật khẩu",
+                            @autocomplete = "off",
+                            @type = "password"
+                        })
+=======
                         @Html.PasswordFor(model => model.Password, new { @class = "input", @id = "field-password",
                        @placeholder = "Mật khẩu", @autocomplete = "off", @type = "password" })
                         @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+>>>>>>> a61f1f33ca0d3b323c638326d9691f73be8d5c67
                         <span toggle="#field-password" class="bx bx-hide field-icon click-eye"></span>
                         <span class="symbol-input d-flex align-items-center pl-4"><i class='bx bx-key'></i></span>
                     </div>
