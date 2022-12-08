@@ -7,12 +7,11 @@ using System.Web;
 namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Models
 {
     public class LoginCustomerModel
-    {
-        private string username;
+    {       
+        [Required(ErrorMessage = "Vui lòng nhập email!")]
+        public string Username { get; set; }
 
-        private string password;
-
-        public string Username { get => username; set => username = value; }
-        public string Password { get => password; set => password = value; }
+        [Required(ErrorMessage = "Vui lòng nhập mật khẩu!")]
+        public string Password { get; set; }
     }
 }

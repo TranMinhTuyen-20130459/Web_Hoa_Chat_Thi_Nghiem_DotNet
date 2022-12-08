@@ -365,7 +365,7 @@ a:focus {
 .header .right-bar {
     position: relative;
     top: 13px;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .header .right-bar .right-bar-item .single-icon i {
@@ -381,7 +381,7 @@ a:focus {
 .header .shopping .single-icon .total-count {
     position: absolute;
     top: -8px;
-    right: 28px;
+    right: 125px;
     background: var(--color-cart-items);
     width: 18px;
     height: 18px;

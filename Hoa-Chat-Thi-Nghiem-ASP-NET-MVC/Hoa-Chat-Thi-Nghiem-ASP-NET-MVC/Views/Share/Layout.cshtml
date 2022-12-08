@@ -1,5 +1,5 @@
-﻿<!DOCTYPE html>
-
+﻿@using Model.entity;
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -21,6 +21,7 @@
 
 </head>
 <body>
+    @{var customer = (Customer)Session["auth_customer"]; }
     <div class="preloader" style="display: none;">
         <div class="preloader-inner">
             <div class="preloader-icon">
@@ -45,12 +46,26 @@
                     <div class="col-lg-5 col-md-5 col-12">
                         <div class="text-right">
                             <ul>
-                                <li>
-                                    <a href="/Account/Login"><i class="bi bi-box-arrow-in-right"></i>Đăng nhập</a>
-                                </li>
-                                <li>
-                                    <a href="/Account/Register"><i class="bi bi-person-plus"></i>Đăng ký</a>
-                                </li>
+                                @{
+                                    if (customer != null)
+                                    {
+                                        <li>
+                                            <a href="/Profile/ProfileUser"><i class="bi bi-person-plus"></i>Xin chào @customer.Fullname</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Account/Logout"><i class="bi bi-box-arrow-in-right"></i>Đăng xuất</a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            <a href="/Account/Login"><i class="bi bi-box-arrow-in-right"></i>Đăng nhập</a>
+                                        </li>
+                                        <li>
+                                            <a href="/Account/Register"><i class="bi bi-person-plus"></i>Đăng ký</a>
+                                        </li>
+                                    }
+                                }
                             </ul>
                         </div>
                     </div>
@@ -163,10 +178,7 @@
                     <div class="col-lg-2 col-md-3 col-12">
                         <div class="right-bar">
                             <!-- Search Form -->
-                            <div class="right-bar-item d-inline-block mr-4">
-                                <a href="/Profile/ProfileUser" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="right-bar-item shopping d-inline-block">
+                            <div class="right-bar-item shopping d-inline-block mr-4">
                                 <a href="/Cart/ShoppingCart" class="single-icon"><i class="fa fa-shopping-cart"></i><span class="total-count">2</span></a>
                                 <!-- Shopping Item -->
                                 <div class="shopping-item">
@@ -204,6 +216,15 @@
                                     </div>
                                 </div>
                             </div>
+
+                            @{
+                                if (customer != null)
+                                {
+                                    <div class="right-bar-item d-inline-block">
+                                        <a href="/Profile/ProfileUser" class="single-icon"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                                    </div>
+                                }
+                            }
                         </div>
                     </div>
                 </div>
@@ -436,5 +457,9 @@
     <script src="~/Assets/shop/js/onepage-nav.min.js"></script>
     <script src="~/Assets/shop/js/easing.js"></script>
     <script src="~/Assets/shop/js/active.js"></script>
+    <script src="~/Assets/shop/js/main.js"></script>
+    <script src='@Url.Content("~/Scripts/jquery-1.8.2.js")' type='text/javascript'></script>
+    <script src='@Url.Content("~/Scripts/jquery.validate.js")' type='text/javascript'></script>
+    <script src='@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")' type='text/javascript'></script>
 </body>
 </html>

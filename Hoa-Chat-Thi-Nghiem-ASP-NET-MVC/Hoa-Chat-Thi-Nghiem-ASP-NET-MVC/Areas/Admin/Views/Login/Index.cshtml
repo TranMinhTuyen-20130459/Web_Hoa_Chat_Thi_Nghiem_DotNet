@@ -25,14 +25,25 @@
                     @Html.ValidationSummary(false, "", new { @class = "text-danger" });
                     <div class="wrap-input">
                         <!-- <input class="input" type="text" placeholder="Tài khoản quản trị" name="username" id="field-username"> -->
-                        @Html.TextBoxFor(model => model.Username, new { @class = "input", @autofocus = "autofocus",
-                       @id = "field-username", @placeholder = "Tài khoản quản trị" })
+                        @Html.TextBoxFor(model => model.Username, new
+                        {
+                            @class = "input",
+                            @autofocus = "autofocus",
+                       @id = "field-username",
+                            @placeholder = "Tài khoản quản trị"
+                        })
                         <span class="symbol-input d-flex align-items-center pl-4"><i class='bx bx-user'></i></span>
                     </div>
                     <div class="wrap-input">
                         <!-- <input autocomplete="off" class="input" type="password" placeholder="Mật khẩu" name="password" id="field-password"> -->
-                        @Html.PasswordFor(model => model.Password, new { @class = "input", @id = "field-password",
-                        @placeholder = "Mật khẩu", @autocomplete = "off", @type = "password" })
+                        @Html.PasswordFor(model => model.Password, new
+                        {
+                            @class = "input",
+                            @id = "field-password",
+                        @placeholder = "Mật khẩu",
+                            @autocomplete = "off",
+                            @type = "password"
+                        })
                         <span toggle="#field-password" class="bx bx-hide field-icon click-eye"></span>
                         <span class="symbol-input d-flex align-items-center pl-4"><i class='bx bx-key'></i></span>
                     </div>
