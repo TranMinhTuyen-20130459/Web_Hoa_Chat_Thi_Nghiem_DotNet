@@ -27,6 +27,12 @@
                         <!--<form class="m-0 p-5 text-center">-->
                         <h5 class="mb-4">Đăng Nhập</h5>
                         @Html.ValidationSummary(false, "", new { @class = "text-danger notification-error" });
+                        if (@ViewBag.ban != null)
+                        {
+                            <div class="alert alert-danger notification-error" role="alert">
+                                @ViewBag.ban
+                            </div>
+                        }
                         <!--<input class="w-100 mb-3" type="username" placeholder="Email">-->
                         @Html.TextBoxFor(model => model.Username, new
                    {

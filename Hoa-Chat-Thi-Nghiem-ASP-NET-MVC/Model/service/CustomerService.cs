@@ -1,12 +1,8 @@
 using Model.dao;
 using Model.entity;
-<<<<<<< HEAD
 using System;
 using System.Collections;
-=======
-using System.Collections;
 
->>>>>>> a61f1f33ca0d3b323c638326d9691f73be8d5c67
 
 namespace Model.service
 {
@@ -37,6 +33,11 @@ namespace Model.service
         public static void register(string email, string password)
         {
             dao.register(email, password);
+        }
+
+        public static void changePass(string email, string newPass)
+        {
+            dao.changePass(email, newPass);
         }
     }
 }
