@@ -1249,6 +1249,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\ChangePassCustomerModel.cs" />
     <Compile Include="Models\ConfirmPasswordCustomerModel.cs" />
     <Compile Include="Models\ForgotPassCustomerModel.cs" />

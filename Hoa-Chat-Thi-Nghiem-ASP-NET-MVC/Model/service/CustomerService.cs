@@ -3,7 +3,6 @@ using Model.entity;
 using System;
 using System.Collections;
 
-
 namespace Model.service
 {
     public class CustomerService

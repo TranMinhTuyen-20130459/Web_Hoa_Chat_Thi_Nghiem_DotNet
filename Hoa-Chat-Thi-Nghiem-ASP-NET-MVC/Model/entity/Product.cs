@@ -2,6 +2,7 @@
 {
     public class Product
     {
+
         private string name_product;
         private string desc_product;
         private string url_img_product;
@@ -36,7 +37,7 @@
             this.listed_price = listed_price;
             this.current_price = current_price;
         }
- 
+        
         public string Name_product { get => name_product; set => name_product = value; }
         public string Desc_product { get => desc_product; set => desc_product = value; }
         public string Url_img_product { get => url_img_product; set => url_img_product = value; }
