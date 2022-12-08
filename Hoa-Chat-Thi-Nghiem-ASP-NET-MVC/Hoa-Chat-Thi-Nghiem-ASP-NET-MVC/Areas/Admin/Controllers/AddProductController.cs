@@ -15,6 +15,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Areas.Admin.Controllers
             // lấy ra danh sách các loại sản phẩm , trạng thái sản phẩm , nhà cung cấp cho sản phẩm
             ArrayList listArrayList = ProductService.getListTypeStatusSupplier();
             Session["List-Type-Status-Supplier-Product"] = listArrayList;
+            ViewBag.MessAlert = TempData["MessageAlert"];
             return View();
         }
 
@@ -71,13 +72,14 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Areas.Admin.Controllers
 
                 bool checkAddNewProduct = ProductService.addNewProduct(product, admin);
                 if (checkAddNewProduct)
-                {
-                    ViewBag.Notification = "Bạn đã thêm sản phẩm thành công vào hệ thống ^.^";
+                {                  
+                    TempData["MessageAlert"]= "Chuc mung ban da them san pham thanh cong ^.^";
                     return RedirectToAction("Index");
                 }
 
             }
             return View("Index");
         }
+      
     }
 }
