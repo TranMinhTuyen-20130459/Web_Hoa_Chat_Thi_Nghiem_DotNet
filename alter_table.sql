@@ -22,7 +22,7 @@ ALTER TABLE news
 			MODIFY COLUMN content_news LONGTEXT NOT NULL;
 			
 ALTER TABLE news
-			ADD COLUMN fullname_admin VARCHAR(255);
+			ADD COLUMN nameAdmin VARCHAR(255);
 
 			
 
