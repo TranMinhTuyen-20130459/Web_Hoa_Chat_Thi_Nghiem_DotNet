@@ -4,7 +4,7 @@
 @{
     /**/
 
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Thêm mới sản phẩm";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutPage.cshtml";
 }
 <style>
@@ -210,13 +210,13 @@
     <!--Hiển thị thông báo dùng sweetalert-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script charset="utf-8" type="text/javascript">     
-    @if(ViewBag.MessAlert != null) {        
+    @if("Success".Equals(ViewBag.MessAlert)) {        
         <text >
                 $(document).ready(function()
                     {
                     swal({
                         title: "Thông báo",
-                        text: "@ViewBag.MessAlert",
+                        text: "Chúc mừng bạn đã thêm mới sản phẩm thành công ^.^",
                         type: "success"
                     });
                 });

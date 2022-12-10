@@ -98,6 +98,7 @@
     <Compile Include="dao\TestProductDAO.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="service\TestNewsService.cs" />
     <Compile Include="service\TestProductService.cs" />
   </ItemGroup>
   <ItemGroup>

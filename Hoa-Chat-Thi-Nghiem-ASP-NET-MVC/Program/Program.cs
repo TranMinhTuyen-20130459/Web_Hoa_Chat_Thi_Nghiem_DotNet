@@ -79,7 +79,9 @@ namespace Program
             //TestProductService.TestAddNewProduct();
             //TestProductService.TestUpdateProduct();
             //TestProductService.TestDeleteProduct();
-            TestProductService.TestGetListTypeStatusSupplier();
+            //TestProductService.TestGetListTypeStatusSupplier();
+
+            TestNewsService.TestAddNews();
             Console.Read();
         }
     }

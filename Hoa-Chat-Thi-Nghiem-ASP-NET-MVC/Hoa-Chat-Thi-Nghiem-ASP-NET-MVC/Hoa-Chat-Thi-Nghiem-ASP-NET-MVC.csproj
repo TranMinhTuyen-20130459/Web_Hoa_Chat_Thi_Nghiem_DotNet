@@ -1236,6 +1236,7 @@
     <Compile Include="Areas\Admin\Controllers\RootSettingsController.cs" />
     <Compile Include="Areas\Admin\Controllers\SalesReportController.cs" />
     <Compile Include="Areas\Admin\Controllers\SettingsController.cs" />
+    <Compile Include="Areas\Admin\Models\AddNewsModel.cs" />
     <Compile Include="Areas\Admin\Models\AddProductModel.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
     <Compile Include="Controllers\AccountController.cs" />
