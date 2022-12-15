@@ -21,3 +21,10 @@ img.custom-image-product {
         webkit-transform: scale(1.5);
         transform: scale(1.5);
     }
+
+.pagination > li.active {
+    
+    background: #167DCC;
+    color: white;
+    cursor :pointer ;
+}

@@ -404,3 +404,7 @@ E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Ngh
 E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\obj\Debug\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC.csproj.CopyComplete
 E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\obj\Debug\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC.dll
 E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\obj\Debug\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC.pdb
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\PagedList.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\PagedList.Mvc.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\PagedList.xml
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\PagedList.Mvc.xml

@@ -1,6 +1,9 @@
 ﻿@using System.Collections;
 @using System.Collections.Generic;
 @using Model.entity;
+@model Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Models.ProductsModel
+@using PagedList;
+@using PagedList.Mvc;
 @{
     ViewBag.Title = "Danh sách sản phẩm";
     Layout = "~/Views/Share/Layout.cshtml";
@@ -83,7 +86,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    @foreach (Product item in listProduct)
+                    @foreach (Product item in Model.ListOfProducts)
                     {
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="single-product">
@@ -119,21 +122,15 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>}
+                        </div>
+                    }
                 </div>
 
                 <!-- Pagination -->
                 <div class="pagination d-flex justify-content-center mt-5">
                     <div class="pagination-container">
-                        <a class="control" href="#"><i class="bi-chevron-left"></i></a>
-                        <a class="active" href="#">1</a>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">15</a>
-                        <a class="control" href="#"><i class="bi-chevron-right"></i></a>
+                         @Html.PagedListPager(Model.ListOfProducts, page => Url.Action("ListProducts", new { page }))
+                        
                     </div>
                 </div>
             </div>
@@ -141,31 +138,3 @@
     </div>
 </section>
 
-@*@section scripts{
-    <script>
-        var pageSize = 4;
-        var pageCount = Math.ceil(1 * @ViewBag.ListProducts.Count/ pageSize);
-
-            alert(pageCount);
-        //function LoadData() {
-        //    $.ajax({
-        //        url: '/Products/GetData',
-        //        type: 'GET',
-        //        success: function (res) {
-        //            if (res.TotalItems > 0) {
-        //                var items = res.Data;
-        //                var pageNumber = Math.ceil(res.TotalItems / pageSize);
-        //                var html = "";
-        //                for (let i = 0; i < res.TotalItems; i++) {
-        //                 document.getElementsByClassName("product-content").innerHTML = items[i].Name_product
-
-        //                }
-
-        //            }
-        //        }
-        //    });
-        //}
-    </script>
-
-
-}*@
