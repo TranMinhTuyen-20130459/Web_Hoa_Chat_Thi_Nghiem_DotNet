@@ -5,6 +5,10 @@
         private int id_type;
         private string name_type;
 
+        public TypeProduct()
+        {
+        }
+
         public TypeProduct(int id_type, string name_type)
         {
             this.Id_type = id_type;

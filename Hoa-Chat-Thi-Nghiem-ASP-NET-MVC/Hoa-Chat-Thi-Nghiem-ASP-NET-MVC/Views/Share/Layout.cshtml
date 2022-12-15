@@ -1,4 +1,12 @@
 ﻿@using Model.entity;
+@using System.Collections.Generic;
+@using System.Collections;
+@using System.Web.Mvc;
+@{
+    List<TypeProduct> dsHoachat = Session["hoachat"] as List<TypeProduct>;
+    List<TypeProduct> dsDungcu = Session["dungcu"] as List<TypeProduct>;
+    List<TypeProduct> dsThietbi = Session["thietbi"] as List<TypeProduct>;
+}
 <!DOCTYPE html>
 <html>
 <head>
@@ -99,57 +107,40 @@
                         <div class="mobile-nav">
                             <div class="slicknav_menu">
                                 <a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed"><span class="slicknav_menutxt"></span><span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><ul class="slicknav_nav slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
+
                                     <li class="position-relative mr-2 slicknav_collapsed slicknav_parent">
                                         <a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row">
-                                            <a href="/Products/ListProducts" tabindex="-1">Hóa chất<i class="ti-angle-down"></i></a>
+                                            <a href="@Url.Action("ListProducts", "Products", new {id = 40})" tabindex="-1">Hóa chất<i class="ti-angle-down"></i></a>
                                             <span class="slicknav_arrow">►</span>
                                         </a><ul class="dropdown slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
-                                            <li><a href="" role="menuitem" tabindex="-1">ACID</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">BAZO</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">DUNG MÔI</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">ESTE</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">HÓA CHẤT CƠ BẢN</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">HỢP CHẤT TẠP CHỨC, POLIME</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">KIM LOẠI</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">MUỐI</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">OXIT</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">THUỐC THỬ</a></li>
+                                            @foreach (TypeProduct type in dsHoachat)
+                                            {
+                                                <li><a href="@Url.Action("ListProducts", "Products", new {id = type.Id_type})" role="menuitem" tabindex="-1">@type.Name_type</a></li>
+                                            }
                                         </ul>
                                     </li>
                                     <li class="position-relative mr-2 slicknav_collapsed slicknav_parent">
                                         <a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row">
-                                            <a href="/Products/ListProducts" tabindex="-1">Dụng cụ<i class="ti-angle-down"></i></a>
+                                            <a href="@Url.Action("ListProducts", "Products", new {id = 50})" tabindex="-1">Dụng cụ<i class="ti-angle-down"></i></a>
                                             <span class="slicknav_arrow">►</span>
                                         </a><ul class="dropdown slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
-                                            <li><a href="" role="menuitem" tabindex="-1">BÌNH THÍ NGHIỆM</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">BỘ CHÀY CỐI</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">BỘ LỌC HÚT CHÂN KHÔNG</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">CỐC CHÉN ĐĨA CHO LAB</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">ĐÈN CỒN</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">ĐO NHIỆT ĐỘ, TỶ TRỌNG, ÁP SUẤT</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">GIẤY LỌC, MÀNG LỌC</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">ỐNG ĐONG</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">ỐNG NGHIỆM</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">PHỄU</a></li>
+                                            @foreach (TypeProduct type in dsDungcu)
+                                            {
+                                                <li><a href="@Url.Action("ListProducts", "Products", new {id = type.Id_type})" role="menuitem" tabindex="-1">@type.Name_type</a></li>
+                                            }
+
                                         </ul>
                                     </li>
                                     <li class="position-relative mr-2 slicknav_collapsed slicknav_parent">
                                         <a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row">
-                                            <a href="/Products/ListProducts" tabindex="-1">Thiết bị<i class="ti-angle-down"></i></a>
+                                            <a href="@Url.Action("ListProducts", "Products", new {id = 60})" tabindex="-1">Thiết bị<i class="ti-angle-down"></i></a>
                                             <span class="slicknav_arrow">►</span>
                                         </a><ul class="dropdown slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
-                                            <li><a href="" role="menuitem" tabindex="-1">CÂN PHÒNG THÍ NGHIỆM</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">KÍNH HIỂN VI</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">LÒ NUNG</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">MÁY CẤT NƯỚC</a></li>
-                                            <li>
-                                                <a href="" role="menuitem" tabindex="-1">MÁY ĐO CÁC CHỈ TIÊU TRONG DUNG DỊCH</a>
-                                            </li>
-                                            <li><a href="" role="menuitem" tabindex="-1">MÁY LẮC</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">MÁY LY TÂM</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">NỒI HẤP TIỆT TRÙNG</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">TỦ ẤM</a></li>
-                                            <li><a href="" role="menuitem" tabindex="-1">TỦ BẢO QUẢN MẪU VÀ TỦ LẠNH</a></li>
+                                            @foreach (TypeProduct type in dsThietbi)
+                                            {
+                                                <li><a href="@Url.Action("ListProducts", "Products", new {id = type.Id_type})" role="menuitem" tabindex="-1">@type.Name_type</a></li>
+                                            }
+
                                         </ul>
                                     </li>
 
@@ -237,51 +228,34 @@
                 <nav class="navbar navbar-expand-lg p-0">
                     <div class="navbar-collapse">
                         <ul class="nav menu navbar-nav">
+
                             <li class="position-relative mr-2">
-                                <a href="/Products/ListProducts">Hóa chất<i class="ti-angle-down"></i></a>
+                                <a href="@Url.Action("ListProducts", "Products", new {id =40})">Hóa chất<i class="ti-angle-down"></i></a>
                                 <ul class="dropdown">
-                                    <li><a href="">ACID</a></li>
-                                    <li><a href="">BAZO</a></li>
-                                    <li><a href="">DUNG MÔI</a></li>
-                                    <li><a href="">ESTE</a></li>
-                                    <li><a href="">HÓA CHẤT CƠ BẢN</a></li>
-                                    <li><a href="">HỢP CHẤT TẠP CHỨC, POLIME</a></li>
-                                    <li><a href="">KIM LOẠI</a></li>
-                                    <li><a href="">MUỐI</a></li>
-                                    <li><a href="">OXIT</a></li>
-                                    <li><a href="">THUỐC THỬ</a></li>
+                                    @foreach (TypeProduct type in dsHoachat)
+                                    {
+                                        <li><a href="@Url.Action("ListProducts", "Products", new {id = type.Id_type})">@type.Name_type</a></li>
+
+                                    }
+
                                 </ul>
                             </li>
                             <li class="position-relative mr-2">
-                                <a href="/Products/ListProducts">Dụng cụ<i class="ti-angle-down"></i></a>
+                                <a href="@Url.Action("ListProducts", "Products", new {id = 50})">Dụng cụ<i class="ti-angle-down"></i></a>
                                 <ul class="dropdown">
-                                    <li><a href="">BÌNH THÍ NGHIỆM</a></li>
-                                    <li><a href="">BỘ CHÀY CỐI</a></li>
-                                    <li><a href="">BỘ LỌC HÚT CHÂN KHÔNG</a></li>
-                                    <li><a href="">CỐC CHÉN ĐĨA CHO LAB</a></li>
-                                    <li><a href="">ĐÈN CỒN</a></li>
-                                    <li><a href="">ĐO NHIỆT ĐỘ, TỶ TRỌNG, ÁP SUẤT</a></li>
-                                    <li><a href="">GIẤY LỌC, MÀNG LỌC</a></li>
-                                    <li><a href="">ỐNG ĐONG</a></li>
-                                    <li><a href="">ỐNG NGHIỆM</a></li>
-                                    <li><a href="">PHỄU</a></li>
+                                    @foreach (TypeProduct type in dsDungcu)
+                                    {
+                                        <li><a href="@Url.Action("ListProducts", "Products", new {id = type.Id_type})">@type.Name_type</a></li>
+                                    }
                                 </ul>
                             </li>
                             <li class="position-relative mr-2">
-                                <a href="/Products/ListProducts">Thiết bị<i class="ti-angle-down"></i></a>
+                                <a href="@Url.Action("ListProducts", "Products", new {id =60})">Thiết bị<i class="ti-angle-down"></i></a>
                                 <ul class="dropdown">
-                                    <li><a href="">CÂN PHÒNG THÍ NGHIỆM</a></li>
-                                    <li><a href="">KÍNH HIỂN VI</a></li>
-                                    <li><a href="">LÒ NUNG</a></li>
-                                    <li><a href="">MÁY CẤT NƯỚC</a></li>
-                                    <li>
-                                        <a href="">MÁY ĐO CÁC CHỈ TIÊU TRONG DUNG DỊCH</a>
-                                    </li>
-                                    <li><a href="">MÁY LẮC</a></li>
-                                    <li><a href="">MÁY LY TÂM</a></li>
-                                    <li><a href="">NỒI HẤP TIỆT TRÙNG</a></li>
-                                    <li><a href="">TỦ ẤM</a></li>
-                                    <li><a href="">TỦ BẢO QUẢN MẪU VÀ TỦ LẠNH</a></li>
+                                    @foreach (TypeProduct type in dsThietbi)
+                                    {
+                                        <li><a href="@Url.Action("ListProducts", "Products", new {id = type.Id_type})">@type.Name_type</a></li>
+                                    }
                                 </ul>
                             </li>
 

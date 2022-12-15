@@ -3,6 +3,7 @@ using Model.db;
 using Model.entity;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Model.service
 {
@@ -114,5 +115,38 @@ namespace Model.service
             }
             return result;
         }
+        public static List<Product> findAll()
+        {
+            ProductDAO dao = new ProductDAO();
+            return dao.findAll();
+
+        }
+        public static List<Product> findOneProductById(int id)
+        {
+            ProductDAO dao = new ProductDAO();
+            return dao.findOneProductById(id);
+
+        }
+        public static List<Product> findProductsByIdType(int id)
+        {
+            ProductDAO dao = new ProductDAO();
+            return dao.findProductsByIdType(id);
+        }
+        public static List<Product> findProductsByIdTypeMain(int id)
+        {
+            ProductDAO dao = new ProductDAO();
+            return dao.findProductsByIdTypeMain(id);
+        }
+        public static List<TypeProduct> findTypeProducts()
+        {
+            ProductDAO dao = new ProductDAO();
+            return dao.findAllTypeProducts();
+        }
+        public static List<TypeProduct> findTypeProductsById(int id)
+        {
+            ProductDAO dao = new ProductDAO();
+            return dao.findTypeProductsById(id);
+        }
+
     }
 }

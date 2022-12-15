@@ -1,4 +1,6 @@
-﻿namespace Model.entity
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Model.entity
 {
     public class Product
     {
@@ -13,6 +15,7 @@
         private int id_product;
         private int listed_price;
         private int current_price;
+        private int star;
 
         public Product(string name_product, string desc_product, string url_img_product, int quantity_product, int id_type, int id_status, int id_supplier)
         {
@@ -37,7 +40,11 @@
             this.listed_price = listed_price;
             this.current_price = current_price;
         }
-        
+        public Product()
+        {
+
+        }
+
         public string Name_product { get => name_product; set => name_product = value; }
         public string Desc_product { get => desc_product; set => desc_product = value; }
         public string Url_img_product { get => url_img_product; set => url_img_product = value; }
@@ -48,10 +55,11 @@
         public int Id_product { get => id_product; set => id_product = value; }
         public int Listed_price { get => listed_price; set => listed_price = value; }
         public int Current_price { get => current_price; set => current_price = value; }
+        public int Star { get => star; set => star = value; }
 
         public override string ToString()
         {
-            return "name= " + Name_product + " ,desc= " + Desc_product + " ,url_img= " + Url_img_product 
+            return "name= " + Name_product + " ,desc= " + Desc_product + " ,url_img= " + Url_img_product
                 + " ,quantity= " + Quantity_product + " ,id_type= " + Id_type + " ,id_status= " + Id_status + " ,id_supplier=" + Id_supplier;
         }
     }

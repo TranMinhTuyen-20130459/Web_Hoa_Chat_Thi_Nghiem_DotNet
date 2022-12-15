@@ -1,7 +1,9 @@
 ﻿using Model.db;
 using Model.entity;
 using MySql.Data.MySqlClient;
+using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Model.dao
 {
@@ -226,6 +228,281 @@ namespace Model.dao
             return result;
         }
 
+        public List<Product> findAll()
+        {
+            DBConnection connectDB = DBConnection.GetInstall(); // khởi tạo đối tượng kết nối đến MySql
+            List<Product> result = new List<Product>();
+            Product product = null;
+            try
+            {
+                String query = "SELECT * FROM PRODUCTS AS P " +
+                    "INNER JOIN TYPE_PRODUCT AS TP ON P.id_type_product = TP.id_type_product " +
+                    "INNER JOIN STATUS_PRODUCT AS SP ON P.id_status_product = SP.id_status_product " +
+                    "INNER JOIN price_product AS PP ON PP.id_product = P.id_product ";
+
+
+                MySqlCommand cmd = connectDB.GetMySqlCommand();
+                cmd.CommandText = query;
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        product = new Product();
+
+                        product.Name_product = reader.GetString("name_product");
+                        product.Desc_product = reader.GetString("description_product");
+                        product.Url_img_product = reader.GetString("url_img_product");
+                        product.Id_product = reader.GetInt32("id_product");
+                        product.Id_type = reader.GetInt32("id_type_product");
+                        product.Id_type = reader.GetInt32("id_status_product");
+                        product.Id_supplier = reader.GetInt32("id_supplier");
+                        product.Quantity_product = reader.GetInt32("quantity_product");
+                        product.Listed_price = reader.GetInt32("listed_price");
+                        product.Current_price = reader.GetInt32("current_price");
+                        product.Star = reader.GetInt32("star_review");
+
+                        result.Add(product);
+                    }
+
+                }
+            }
+            catch (MySqlException e)
+            {
+                return null;
+            }
+            finally
+            {
+                connectDB.UnInstall();
+            }
+            return result;
+        }
+
+
+        public List<Product> findOneProductById(int id)
+        {
+            DBConnection connectDB = DBConnection.GetInstall(); // khởi tạo đối tượng kết nối đến MySql
+            List<Product> result = new List<Product>();
+            Product product = null;
+
+            try
+            {
+                String query = "SELECT * FROM PRODUCTS AS P " +
+                   "INNER JOIN TYPE_PRODUCT AS TP ON P.id_type_product = TP.id_type_product " +
+                    "INNER JOIN STATUS_PRODUCT AS SP ON P.id_status_product = SP.id_status_product " +
+                    "INNER JOIN price_product AS PP ON PP.id_product = P.id_product " +
+                    "WHERE P.id_product = @id";
+
+                MySqlCommand cmd = connectDB.GetMySqlCommand();
+                cmd.CommandText = query;
+                cmd.Parameters.AddWithValue("@id", id);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        product = new Product();
+
+                        product.Name_product = reader.GetString("name_product");
+                        product.Desc_product = reader.GetString("description_product");
+                        product.Url_img_product = reader.GetString("url_img_product");
+                        product.Id_product = reader.GetInt32("id_product");
+                        product.Id_type = reader.GetInt32("id_type_product");
+                        product.Id_type = reader.GetInt32("id_status_product");
+                        product.Id_supplier = reader.GetInt32("id_supplier");
+                        product.Quantity_product = reader.GetInt32("quantity_product");
+                        product.Star = reader.GetInt32("star_review");
+                        product.Listed_price = reader.GetInt32("listed_price");
+                        product.Current_price = reader.GetInt32("current_price");
+
+                        result.Add(product);
+                    }
+                }
+            }
+            catch (MySqlException e)
+            {
+                return null;
+            }
+            finally
+            {
+                connectDB.UnInstall();
+            }
+            return result;
+        }
+        public List<Product> findProductsByIdType(int idType)
+        {
+            DBConnection connectDB = DBConnection.GetInstall(); // khởi tạo đối tượng kết nối đến MySql
+            List<Product> result = new List<Product>();
+            Product product = null;
+
+            try
+            {
+                String query = "SELECT * FROM PRODUCTS AS P " +
+                    "INNER JOIN TYPE_PRODUCT AS TP ON P.id_type_product = TP.id_type_product " +
+                    "INNER JOIN STATUS_PRODUCT AS SP ON P.id_status_product = SP.id_status_product " +
+                    "INNER JOIN price_product AS PP ON PP.id_product = P.id_product " +
+                    "WHERE P.id_type_product = @id";
+
+
+                MySqlCommand cmd = connectDB.GetMySqlCommand();
+                cmd.CommandText = query;
+                cmd.Parameters.AddWithValue("@id", idType);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        product = new Product();
+
+                        product.Name_product = reader.GetString("name_product");
+                        product.Desc_product = reader.GetString("description_product");
+                        product.Url_img_product = reader.GetString("url_img_product");
+                        product.Id_product = reader.GetInt32("id_product");
+                        product.Id_type = reader.GetInt32("id_type_product");
+                        product.Id_type = reader.GetInt32("id_status_product");
+                        product.Id_supplier = reader.GetInt32("id_supplier");
+                        product.Quantity_product = reader.GetInt32("quantity_product");
+                        product.Star = reader.GetInt32("star_review");
+                        product.Listed_price = reader.GetInt32("listed_price");
+                        product.Current_price = reader.GetInt32("current_price");
+
+                        result.Add(product);
+                    }
+                }
+            }
+            catch (MySqlException e)
+            {
+                return null;
+            }
+            finally
+            {
+                connectDB.UnInstall();
+            }
+            return result;
+        }
+        public List<Product> findProductsByIdTypeMain(int idType)
+        {
+            DBConnection connectDB = DBConnection.GetInstall(); // khởi tạo đối tượng kết nối đến MySql
+            List<Product> result = new List<Product>();
+            Product product = null;
+
+            try
+            {
+                String query = "SELECT * FROM PRODUCTS AS P " +
+                    "INNER JOIN TYPE_PRODUCT AS TP ON P.id_type_product = TP.id_type_product " +
+                    "INNER JOIN STATUS_PRODUCT AS SP ON P.id_status_product = SP.id_status_product " +
+                    "INNER JOIN price_product AS PP ON PP.id_product = P.id_product " +
+                    "WHERE P.id_type_product > @id AND P.id_type_product <= (@id + 10)";
+
+
+                MySqlCommand cmd = connectDB.GetMySqlCommand();
+                cmd.CommandText = query;
+                cmd.Parameters.AddWithValue("@id", idType);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        product = new Product();
+
+                        product.Name_product = reader.GetString("name_product");
+                        product.Desc_product = reader.GetString("description_product");
+                        product.Url_img_product = reader.GetString("url_img_product");
+                        product.Id_product = reader.GetInt32("id_product");
+                        product.Id_type = reader.GetInt32("id_type_product");
+                        product.Id_type = reader.GetInt32("id_status_product");
+                        product.Id_supplier = reader.GetInt32("id_supplier");
+                        product.Quantity_product = reader.GetInt32("quantity_product");
+                        product.Star = reader.GetInt32("star_review");
+                        product.Listed_price = reader.GetInt32("listed_price");
+                        product.Current_price = reader.GetInt32("current_price");
+
+                        result.Add(product);
+                    }
+                }
+            }
+            catch (MySqlException e)
+            {
+                return null;
+            }
+            finally
+            {
+                connectDB.UnInstall();
+            }
+            return result;
+        }
+        public List<TypeProduct> findAllTypeProducts()
+        {
+            DBConnection connectDB = DBConnection.GetInstall(); // khởi tạo đối tượng kết nối đến MySql
+            List<TypeProduct> result = new List<TypeProduct>();
+            TypeProduct type = null;
+
+            try
+            {
+                String query = "SELECT * FROM type_product";
+
+                MySqlCommand cmd = connectDB.GetMySqlCommand();
+                cmd.CommandText = query;
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    type = new TypeProduct();
+
+                    type.Id_type = reader.GetInt32("id_type_product");
+                    type.Name_type = reader.GetString("name_type_product");
+
+
+                    result.Add(type);
+                }
+            }
+            catch (MySqlException e)
+            {
+                return null;
+            }
+            finally
+            {
+                connectDB.UnInstall();
+            }
+            return result;
+        }
+        public List<TypeProduct> findTypeProductsById(int id)
+        {
+            DBConnection connectDB = DBConnection.GetInstall(); // khởi tạo đối tượng kết nối đến MySql
+            List<TypeProduct> result = new List<TypeProduct>();
+            TypeProduct type = null;
+
+            try
+            {
+                String query = "SELECT * FROM type_product " +
+                    "WHERE id_type_product > @id AND id_type_product <= (@id + 10)";
+
+                MySqlCommand cmd = connectDB.GetMySqlCommand();
+                cmd.CommandText = query;
+                cmd.Parameters.AddWithValue("@id", id);
+                MySqlDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    type = new TypeProduct();
+
+                    type.Id_type = reader.GetInt32("id_type_product");
+                    type.Name_type = reader.GetString("name_type_product");
+
+
+                    result.Add(type);
+                }
+            }
+            catch (MySqlException e)
+            {
+                return null;
+            }
+            finally
+            {
+                connectDB.UnInstall();
+            }
+            return result;
+        }
 
 
     }
