@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="add-to-cart d-inline-block">
-                    <a href="@Url.Action("AddItem","Cart", new {idProduct = list[0].Id_product})" class="btn">Thêm vào giỏ hàng</a>
+                    <a href="" onclick="addItem(@list[0].Id_product)" class="btn">Thêm vào giỏ hàng</a>
                 </div>
                 <div class="product-stock">
                     <span>@list[0].Quantity_product sản phẩm có sẵn</span>

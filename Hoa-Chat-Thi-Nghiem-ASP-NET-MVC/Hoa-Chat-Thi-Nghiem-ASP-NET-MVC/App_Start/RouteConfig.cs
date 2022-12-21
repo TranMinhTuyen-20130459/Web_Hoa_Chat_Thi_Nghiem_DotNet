@@ -29,11 +29,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Cart", action = "ShoppingCart", id = UrlParameter.Optional }
             );
-            routes.MapRoute(
-                name: "Add-Item",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Cart", action = "AddItem", id = UrlParameter.Optional }
-            );
+           
 
             routes.MapRoute(
                 name: "Default",

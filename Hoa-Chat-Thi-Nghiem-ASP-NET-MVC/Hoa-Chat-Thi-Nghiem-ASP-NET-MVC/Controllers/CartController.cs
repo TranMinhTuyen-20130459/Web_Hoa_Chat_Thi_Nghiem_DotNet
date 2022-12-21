@@ -18,17 +18,15 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
         }
         public ActionResult ShoppingCart()
         {
-            var list = Session["CartSession"];
             return View();
         }
+        
         public ActionResult AddItem(int idProduct)
         {
-
-            var cart = Session[CartSession];
-            if (cart != null)
-            {
-                var list = (List<CartItem>) cart;
-                
+            String s = Request.Path;
+            var list = (List<CartItem>)Session[CartSession];
+            if (list != null)
+            {  
                 //Tìm sản phẩm cần add có trong Cart hay không
                 //Nếu có thì tăng Quantity
                 foreach (var item in list)
@@ -52,7 +50,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
                 var item = new CartItem();
                 item.Product = ProductService.findOneProductById(idProduct)[0];
                 item.Quantity = 1;
-                var list = new List<CartItem>();
+                list = new List<CartItem>();
                 list.Add(item);
 
                 //Gán Cart vào session
@@ -61,5 +59,19 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
             return View("ShoppingCart");
         }
 
+        public ActionResult RemoveItem(int idProduct)
+        {
+            var list = (List<CartItem>)Session[CartSession];
+            foreach (var item in list)
+            {
+                if (item.Product.Id_product == idProduct)
+                {
+                    list.Remove(item);
+                    break;
+                }
+            }
+            
+            return View();
+        }
     }
 }

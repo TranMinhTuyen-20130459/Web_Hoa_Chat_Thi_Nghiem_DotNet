@@ -77,7 +77,7 @@
                                     @{ total += item.Product.Current_price * item.Quantity;}
                                 </td>
                                 <td class="action text-center" data-title="Remove">
-                                    <a href="#"><i class="ti-trash remove-icon"></i></a>
+                                    <a href="" onclick="deleteItem(@item.Product.Id_product)"><i class="ti-trash remove-icon"></i></a>
                                 </td>
                             </tr>
                         }
