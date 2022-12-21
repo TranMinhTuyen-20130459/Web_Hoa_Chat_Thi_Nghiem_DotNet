@@ -1,4 +1,5 @@
 ﻿using Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Models;
+using Model.service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,13 +16,19 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
         {
             return View();
         }
-
-        public ActionResult ShoppingCart(int idProduct)
+        public ActionResult ShoppingCart()
         {
+            var list = Session["CartSession"];
+            return View();
+        }
+        public ActionResult AddItem(int idProduct)
+        {
+
             var cart = Session[CartSession];
             if (cart != null)
             {
                 var list = (List<CartItem>) cart;
+                
                 //Tìm sản phẩm cần add có trong Cart hay không
                 //Nếu có thì tăng Quantity
                 foreach (var item in list)
@@ -29,19 +36,21 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
                     if (item.Product.Id_product == idProduct)
                     {
                         item.Quantity++;
-                        ViewBag.cartData = cart;
-                        return View();
+                        Session[CartSession] = list;
+                        return View("ShoppingCart");
                     }
                 }
                 //Nếu chưa có thì tạo mới CartItem
                 CartItem cartItem = new CartItem();
+                cartItem.Product = ProductService.findOneProductById(idProduct)[0];
+                cartItem.Quantity = 1;
                 list.Add(cartItem);
             }
             else
             {
                 //tạo mới Cart Item và Cart
                 var item = new CartItem();
-                item.Product.Id_product = idProduct;
+                item.Product = ProductService.findOneProductById(idProduct)[0];
                 item.Quantity = 1;
                 var list = new List<CartItem>();
                 list.Add(item);
@@ -49,13 +58,8 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
                 //Gán Cart vào session
                 Session[CartSession] = list;
             }
-            ViewBag.cartData = cart;
-            return View();
+            return View("ShoppingCart");
         }
-        //public ActionResult ShoppingCart()
-        //{
-        //    return View();
-        //}
 
     }
 }
