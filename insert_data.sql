@@ -10,9 +10,9 @@ insert into role_admin values (2,"member");
 -- ACCOUNT_ADMIN
 insert into account_admin (username,id_role_admin,id_status_acc,passwordAD,fullname) values ("tranminhtuyen",1,1,"20130459","Trần Minh Tuyên");
 insert into account_admin (username,id_role_admin,id_status_acc,passwordAD,fullname) values ("nguyenphutai",2,1,"123456","Nguyễn Phú Tài");
-insert into account_admin (username,id_role_admin,id_status_acc,passwordAD,fullname) values ("nguyenthuylinh",2,1,"123456");
-insert into account_admin (username,id_role_admin,id_status_acc,passwordAD,fullname) values ("nguyenvanlenh",2,1,"123456");
-insert into account_admin (username,id_role_admin,id_status_acc,passwordAD,fullname) values ("dangthevu",2,1,"123456");
+insert into account_admin (username,id_role_admin,id_status_acc,passwordAD,fullname) values ("nguyenthuylinh",2,1,"123456","Nguyễn Thùy Linh");
+insert into account_admin (username,id_role_admin,id_status_acc,passwordAD,fullname) values ("nguyenvanlenh",2,1,"123456","Nguyễn Văn Lênh");
+insert into account_admin (username,id_role_admin,id_status_acc,passwordAD,fullname) values ("dangthevu",2,1,"123456","Đặng Thế Vũ");
 
 -- TYPE_PRODUCT
 INSERT INTO type_product(name_type_product) VALUES ("ACID");
