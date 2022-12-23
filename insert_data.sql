@@ -47,11 +47,10 @@ INSERT INTO type_product(name_type_product) VALUES ("TỦ ẤM");
 INSERT INTO type_product(name_type_product) VALUES ("TỦ BẢO QUẢN MẪU VÀ TỦ LẠNH");
 
 -- SUPPLIERS
-INSERT INTO suppliers(name_supplier) VALUES("BARCA");
-INSERT INTO suppliers(name_supplier) VALUES("REAL");
-INSERT INTO suppliers(name_supplier) VALUES("MAN CITY");
-INSERT INTO suppliers(name_supplier) VALUES("ARSENAL");
-INSERT INTO suppliers(name_supplier) VALUES("LIVERPOOL");
+INSERT INTO `suppliers` (`id_supplier`, `name_supplier`) VALUES
+	(1, 'Cty hóa chất Đức Việt'),
+	(2, 'Cty TNHH một thành viên Thái Hòa'),
+	(3, 'Cty hóa chất Hóa Việt');
 
 -- STATUS_PRODUCT
 INSERT INTO status_product VALUES (1, 'Mới');
