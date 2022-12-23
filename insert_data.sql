@@ -15,6 +15,7 @@ insert into account_admin (username,id_role_admin,id_status_acc,passwordAD,fulln
 insert into account_admin (username,id_role_admin,id_status_acc,passwordAD,fullname) values ("dangthevu",2,1,"123456","Đặng Thế Vũ");
 
 -- TYPE_PRODUCT
+INSERT INTO type_product(id_type_product,name_type_product) VALUES (0,"-- Chọn loại sản phẩm --");
 INSERT INTO type_product(name_type_product) VALUES ("ACID");
 INSERT INTO type_product(name_type_product) VALUES ("BAZO");
 INSERT INTO type_product(name_type_product) VALUES ("DUNG MÔI");
@@ -48,11 +49,13 @@ INSERT INTO type_product(name_type_product) VALUES ("TỦ BẢO QUẢN MẪU VÀ
 
 -- SUPPLIERS
 INSERT INTO `suppliers` (`id_supplier`, `name_supplier`) VALUES
+	(0,'-- Chọn nhà cung cấp --'),
 	(1, 'Cty hóa chất Đức Việt'),
 	(2, 'Cty TNHH một thành viên Thái Hòa'),
 	(3, 'Cty hóa chất Hóa Việt');
 
 -- STATUS_PRODUCT
+INSERT INTO status_product VALUES (0,'-- Chọn trạng thái sản phẩm --');
 INSERT INTO status_product VALUES (1, 'Mới');
 INSERT INTO status_product VALUES (2, 'Hết hàng');
 INSERT INTO status_product VALUES (3, 'Còn hàng');
