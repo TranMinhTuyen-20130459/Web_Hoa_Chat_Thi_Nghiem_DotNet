@@ -3,6 +3,7 @@ using Model.entity;
 using Model.service;
 using System.Web.Mvc;
 using System.Web.Security;
+using System;
 
 namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
 {
@@ -33,8 +34,8 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
                 string email = model.email;
                 if (!CustomerService.checkExsit(email))
                 {
-
                     emailForForgotPass = email;
+                    Session["email"] = emailForForgotPass;
                     return RedirectToAction("ConfirmPassword", "Account");
                 }
                 else
@@ -45,36 +46,38 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
             return View("ForgotPassword");
         }
         //Xác thực mật khẩu
-        [Authorize]
         [HttpGet]
         public ActionResult ConfirmPassword()
         {
-            return View();
+            if (Session["email"] == null)
+            {
+                return View("ForgotPassword");
+            }
+            else
+            {
+                return View();
+            }
         }
 
         [HttpPost]
         public ActionResult confirmPasswordCustomer(ConfirmPasswordCustomerModel model)
         {
-            if (ModelState.IsValid)
-            {
-                string newPass = model.newPass;
-                string confirm_newPass = model.confirm_newPass;
-                if (newPass.Equals(confirm_newPass))
-                {                   
-                    FormsAuthentication.SetAuthCookie(emailForForgotPass, false);
-                    Session["emailForForgot"] = emailForForgotPass;
-                    CustomerService.changePass(emailForForgotPass, newPass);
-                    ViewBag.success_newPass = "Đổi mật khẩu thành công";                   
-                }
-                else
+                if (ModelState.IsValid)
                 {
-                    ModelState.AddModelError("", "Hãy xác thực lại mật khẩu");
+                    string newPass = model.newPass;
+                    string confirm_newPass = model.confirm_newPass;
+                    if (newPass.Equals(confirm_newPass))
+                    {
+                        CustomerService.changePass(emailForForgotPass, newPass);
+                        ViewBag.success_newPass = "Đổi mật khẩu thành công";
+                        Session.Remove("email");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Hãy xác thực lại mật khẩu");
+                    }
                 }
-            }
-            return View("ConfirmPassword");
-            FormsAuthentication.SignOut();
-            Session.Remove("emailForForgot");
-
+                return View("ConfirmPassword");
         }
 
         //Đổi mật khẩu
