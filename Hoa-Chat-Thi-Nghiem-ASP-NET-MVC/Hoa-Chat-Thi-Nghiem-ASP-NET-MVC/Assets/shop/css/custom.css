@@ -12,3 +12,19 @@ img.custom-image-product {
     background-image: url('../images/labs/lab_01.jpg') !important;
     
 }
+.single-slider.zoom {
+    transition: transform .9s;
+}
+
+    .single-slider.zoom:hover {
+        -ms-transform: scale(1.5);
+        webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+
+.pagination > li.active {
+    
+    background: #167DCC;
+    color: white;
+    cursor :pointer ;
+}

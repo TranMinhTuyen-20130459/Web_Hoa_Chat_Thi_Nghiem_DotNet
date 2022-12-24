@@ -4,10 +4,9 @@
 @{
     /**/
 
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Thêm mới sản phẩm";
     Layout = "~/Areas/Admin/Views/Shared/_LayoutPage.cshtml";
 }
-
 <style>
     .Choicefile {
         display: block;
@@ -86,12 +85,10 @@
     ArrayList ListStatusProduct = (ArrayList)result[1];
     ArrayList ListSupplier = (ArrayList)result[2];
 
-    string noti = ViewBag.Notification != null ? ViewBag.Notification : "null";
     string errorType = ViewBag.ErrorType != null ? ViewBag.ErrorType : "";
     string errorStatus = ViewBag.ErrorStatus != null ? ViewBag.ErrorStatus : "";
     string errorSupplier = ViewBag.ErrorSupplier != null ? ViewBag.ErrorSupplier : "";
     string errorPathImage = ViewBag.ErrorPathImage != null ? ViewBag.ErrorPathImage : "";
-
 }
 
 <main class="app-content">
@@ -196,8 +193,8 @@
     </div>
 </main>
 
-
 @section script {
+    <!--Đưa dường dẫn hình ảnh vào TextField input-->
     <script src="~/Assets/plugins/ckfinder/ckfinder.js"></script>
     <script>
         function ChooseImage() {
@@ -209,8 +206,24 @@
             $('input[name=UrlImage]').val(fileUrl);
         }
     </script>
-}
 
+    <!--Hiển thị thông báo dùng sweetalert-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script charset="utf-8" type="text/javascript">     
+    @if("Success".Equals(ViewBag.MessAlert)) {        
+        <text >
+                $(document).ready(function()
+                    {
+                    swal({
+                        title: "Thông báo",
+                        text: "Chúc mừng bạn đã thêm mới sản phẩm thành công ^.^",
+                        type: "success"
+                    });
+                });
+        </text>
+    }
+    </script>
+}
 
 
 

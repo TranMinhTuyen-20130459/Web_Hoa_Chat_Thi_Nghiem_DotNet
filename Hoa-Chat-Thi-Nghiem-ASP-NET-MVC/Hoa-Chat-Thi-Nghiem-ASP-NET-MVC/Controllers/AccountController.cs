@@ -1,26 +1,23 @@
 ﻿using Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Models;
-using Model.entity;
+
 using Model.service;
 using System.Web.Mvc;
 using System.Web.Security;
 using System;
+using System.Web.Helpers;
 
 namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
 {
     public class AccountController : Controller
     {
-        public string emailForForgotPass;
+        string emailForForgotPass = null;
         // GET: Account
-        //Đăng xuất
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
             Session.Remove("auth_customer");
             return RedirectToAction("Index", "Home");
         }
-
-        //Quên mật khẩu
-        //nhập Email
         [HttpGet]
         public ActionResult ForgotPassword()
         {
@@ -64,6 +61,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
         {
                 if (ModelState.IsValid)
                 {
+                    
                     string newPass = model.newPass;
                     string confirm_newPass = model.confirm_newPass;
                     if (newPass.Equals(confirm_newPass))
@@ -81,42 +79,12 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
         }
 
         //Đổi mật khẩu
-        [HttpGet]
+        [Authorize]
+        [HttpGet]       
         public ActionResult ChangePassword()
         {
             return View();
         }
-        [HttpPost]
-        public ActionResult changePasswordCustomer(ChangePassCustomerModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                string oldPass = model.oldPass;
-                string newPass = model.newPass;
-                string confirm_newPass = model.confirm_newPass;
-                Customer customer = (Customer)Session["auth_customer"];
-                if ((customer.Password).Equals(oldPass))
-                {
-                    if (newPass.Equals(confirm_newPass))
-                    {
-                        CustomerService.changePass(customer.Username, newPass);
-                        ViewBag.success_changePass = "Đổi mật khẩu thành công";
-                        //ModelState.AddModelError("success", "đổi mật khẩu thành công");
-                    }
-                    else
-                    {
-                        ModelState.AddModelError("", "Xác thực mật khẩu không đúng");
-                    }
-                }
-                else
-                {
-                    ModelState.AddModelError("", "Mật khẩu cũ không đúng");
-                }
-            }
-            return View("ChangePassword");
-        }
-
-//Đăng ký
         [HttpGet]
         public ActionResult Register()
         {
@@ -136,7 +104,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
                     if (password.Equals(confirm_pass))
                     {
                         CustomerService.register(email,password);
-                        ViewBag.success_registier = "Đăng ký thành công";
+                        ModelState.AddModelError("", "Đăng ký thành công");
                     }
                     else
                     {
@@ -150,8 +118,6 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
             }
             return View("Register");
         }
-
-//Đăng nhập
         [HttpGet]
         public ActionResult Login()
         {
@@ -167,19 +133,9 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
                 var customer = CustomerService.checkLogin(username, password);
                 if (customer != null)
                 {
-                    if(customer.Id_status_acc == 2)
-                    {
-                        ViewBag.ban = "Tài khoản đã bị tạm khóa";
-                    }else if(customer.Id_status_acc == 3)
-                    {
-                        ViewBag.ban = "Tài khoản đã bị khóa vĩnh viễn";
-                    }
-                    else
-                    {
-                        FormsAuthentication.SetAuthCookie(customer.Username, false);
-                        Session["auth_customer"] = customer;
-                        return RedirectToAction("Index", "Home");
-                    }
+                    FormsAuthentication.SetAuthCookie(customer.Username, false);
+                    Session["auth_customer"] = customer;
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {

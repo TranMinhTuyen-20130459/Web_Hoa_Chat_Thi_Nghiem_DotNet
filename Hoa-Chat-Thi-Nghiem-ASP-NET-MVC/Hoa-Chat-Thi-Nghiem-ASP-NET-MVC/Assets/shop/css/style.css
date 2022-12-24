@@ -1411,7 +1411,7 @@ a:focus {
 }
 
 .pagination a:not(.control):hover {
-    color: var(--main-color);
+    
     text-decoration: underline;
 }
 

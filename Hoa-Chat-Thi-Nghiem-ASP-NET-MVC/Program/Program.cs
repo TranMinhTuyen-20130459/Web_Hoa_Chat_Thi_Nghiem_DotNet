@@ -79,7 +79,13 @@ namespace Program
             //TestProductService.TestAddNewProduct();
             //TestProductService.TestUpdateProduct();
             //TestProductService.TestDeleteProduct();
-            TestProductService.TestGetListTypeStatusSupplier();
+            //TestProductService.TestGetListTypeStatusSupplier();
+
+            //TestNewsService.TestAddNews();
+            ProductDAO ser = new ProductDAO();
+            //Console.WriteLine("Hi");
+            //Console.WriteLine("Size "+ser.findAll().Count);
+               
             Console.Read();
         }
     }

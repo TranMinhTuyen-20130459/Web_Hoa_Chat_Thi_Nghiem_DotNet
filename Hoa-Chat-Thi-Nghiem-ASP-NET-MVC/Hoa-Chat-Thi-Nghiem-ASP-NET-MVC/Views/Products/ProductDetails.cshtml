@@ -1,50 +1,70 @@
-﻿
+﻿@using System.Collections;
+@using System.Collections.Generic;
+@using Model.entity;
 @{
     ViewBag.Title = "Chi tiết sản phẩm";
     Layout = "~/Views/Share/Layout.cshtml";
+    List<Product> list = ViewBag.ListProducts;
 }
-
 <div class="breadcrumbs py-4">
     <div class="container text-left">
         <ul class="bread-list d-inline-block">
-            <li class="d-inline-block text-capitalize"><a href="index.html">Trang chủ<i class="ti-arrow-right mx-2"></i></a></li>
-            <li class="d-inline-block text-capitalize"><a href="product-details.html">Chi tiết sản phẩm</a></li>
+            <li class="d-inline-block text-capitalize"><a href="/Home/Index">Trang chủ<i class="ti-arrow-right mx-2"></i></a></li>
+            <li class="d-inline-block text-capitalize"><a href="#">Chi tiết sản phẩm</a></li>
         </ul>
     </div>
 </div>
 <section class="product-detail">
     <div class="row no-gutters">
         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                    <img class="custom-image-product" src="~/Assets/images/hoa_chat/acetic-acid.jpg" />
-            @*<div class="product-slider-active">
-                    <img src="~/Assets/images/hoa_chat/acetic-acid.jpg" />
-                <div>
-                </div>-->
-                <div class="single-slider">
-                    <img src="../images/hoa_chat/acid_bazo/acid_citric/acid_citric.jpg" alt="#" />
+            <div class="product-slider-active">
+                <div class="single-slider zoom">
+                    <img class="custom-image-product" src="@list[0].Url_img_product" />
                 </div>
-            </div>*@
+                <div class="single-slider zoom">
+                    <img class="custom-image-product" src="@list[0].Url_img_product" />
+                </div>
+            </div>
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
             <div class="product-content p-5">
-                <h2>Axit sunfuric loãng</h2>
+                <h2>@list[0].Name_product</h2>
                 <div class="product-rating d-flex">
                     <div class="rating">
-                        <i class="yellow fa fa-star"></i>
-                        <i class="yellow fa fa-star"></i>
-                        <i class="yellow fa fa-star"></i>
-                        <i class="yellow fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                        @for (int j = 0; j < list[0].Star; j++)
+                        {
+                            <i class="yellow fa fa-star"></i>
+                        }
+                        @for (int j = list[0].Star; j < 5; j++)
+                        {
+                            <i class="fa fa-star"></i>
+                        }
                     </div>
                     <a href="#"> (33 Đánh giá)</a>
                 </div>
-                <h3><span>1,490,000đ</span> 1,000,000đ</h3>
+
+                @if (list[0].Listed_price != list[0].Current_price)
+                {
+                    <h3>
+                        <span>@string.Format("{0:0,0 vnđ}", list[0].Listed_price)</span>
+                        @string.Format("{0:0,0 vnđ}", list[0].Current_price)
+                    </h3>
+                }
+                else
+                {
+                    <h3>
+                        @string.Format("{0:0,0 vnđ}", list[0].Current_price)
+                    </h3>
+                }
+
+
+
                 <div class="product-peragraph">
                     <p>
-                        Axit sunfuric - H2SO4 là một axit vô cơ mạnh, hóa chất này có đầy đủ các
-                        tính chất hóa học chung của một axit.
+                        @list[0].Desc_product
                     </p>
                 </div>
+
                 <div class="quantity d-inline-block mr-3">
                     <div class="input-group">
                         <div class="button minus">
@@ -52,7 +72,7 @@
                                 <i class="ti-minus"></i>
                             </button>
                         </div>
-                        <input type="text" name="quant" class="input-number" data-min="1" data-max="1000" value="1" />
+                        <input type="text" name="quant" class="input-number" data-min="1" data-max="@list[0].Quantity_product" value="1" />
                         <div class="button plus">
                             <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant">
                                 <i class="ti-plus"></i>
@@ -61,10 +81,10 @@
                     </div>
                 </div>
                 <div class="add-to-cart d-inline-block">
-                    <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                    <a href="" onclick="addItem(@list[0].Id_product)" class="btn">Thêm vào giỏ hàng</a>
                 </div>
                 <div class="product-stock">
-                    <span>22 sản phẩm có sẵn</span>
+                    <span>@list[0].Quantity_product sản phẩm có sẵn</span>
                 </div>
                 <div class="default-social mt-3">
                     <h4 class="share-now">Chia sẻ:</h4>

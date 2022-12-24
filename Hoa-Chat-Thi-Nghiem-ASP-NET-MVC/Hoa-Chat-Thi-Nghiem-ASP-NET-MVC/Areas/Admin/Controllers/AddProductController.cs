@@ -15,6 +15,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Areas.Admin.Controllers
             // lấy ra danh sách các loại sản phẩm , trạng thái sản phẩm , nhà cung cấp cho sản phẩm
             ArrayList listArrayList = ProductService.getListTypeStatusSupplier();
             Session["List-Type-Status-Supplier-Product"] = listArrayList;
+            ViewBag.MessAlert = TempData["MessageAlert"];
             return View();
         }
 
@@ -57,7 +58,11 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Areas.Admin.Controllers
                 ViewBag.ErrorPathImage = "Bạn chưa chọn hình ảnh cho sản phẩm, hãy chọn lại hình ảnh ^.^";
             }
 
-            if (ModelState.IsValid)
+            // tất cả các điều kiện khi kiểm tra bằng tay
+            bool conditionValidate = (TypeProduct != 0) && (StatusProduct != 0) && (Supplier != 0)
+                                      && (regex.IsMatch(PathImage));
+
+            if (ModelState.IsValid && conditionValidate)
             {
                 string name_product = model.NameProduct;
                 string desc_product = model.Description;
@@ -72,12 +77,13 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Areas.Admin.Controllers
                 bool checkAddNewProduct = ProductService.addNewProduct(product, admin);
                 if (checkAddNewProduct)
                 {
-                    ViewBag.Notification = "Bạn đã thêm sản phẩm thành công vào hệ thống ^.^";
+                    TempData["MessageAlert"] = "Success";
                     return RedirectToAction("Index");
                 }
 
             }
             return View("Index");
         }
+
     }
 }

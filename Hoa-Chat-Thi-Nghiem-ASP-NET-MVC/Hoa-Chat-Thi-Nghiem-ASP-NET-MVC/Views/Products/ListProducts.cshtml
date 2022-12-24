@@ -1,13 +1,19 @@
-﻿
+﻿@using System.Collections;
+@using System.Collections.Generic;
+@using Model.entity;
+@model Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Models.ProductsModel
+@using PagedList;
+@using PagedList.Mvc;
 @{
     ViewBag.Title = "Danh sách sản phẩm";
     Layout = "~/Views/Share/Layout.cshtml";
+    var listProduct = ViewBag.ListProducts as List<Product>;
 }
 <div class="breadcrumbs py-4">
     <div class="container text-left">
         <ul class="bread-list d-inline-block">
-            <li class="d-inline-block text-capitalize"><a href="index.html">Trang chủ<i class="ti-arrow-right mx-2"></i></a></li>
-            <li class="d-inline-block text-capitalize"><a href="blog-single.html">Danh sách sản phẩm</a></li>
+            <li class="d-inline-block text-capitalize"><a href="/Home/Index">Trang chủ<i class="ti-arrow-right mx-2"></i></a></li>
+            <li class="d-inline-block text-capitalize"><a href="#">Danh sách sản phẩm</a></li>
         </ul>
     </div>
 </div>
@@ -48,17 +54,17 @@
                         <ul class="check-box-list mt-3">
                             <li class="mb-1">
                                 <label for="1">
-                                    <input id="1" type="checkbox">200,000đ - 500,000đ<span class="count">(13)</span>
+                                    <input id="1" type="checkbox">200,000đ - 500,000vnđ<span class="count">(13)</span>
                                 </label>
                             </li>
                             <li class="mb-1">
                                 <label for="2">
-                                    <input id="2" type="checkbox">500,000đ - 1,000,000đ<span class="count">(5)</span>
+                                    <input id="2" type="checkbox">500,000đ - 1,000,000vnđ<span class="count">(5)</span>
                                 </label>
                             </li>
                             <li>
                                 <label for="3">
-                                    <input id="3" type="checkbox">1,000,000đ - 2,500,000đ<span class="count">(8)</span>
+                                    <input id="3" type="checkbox">1,000,000đ - 2,500,000vnđ<span class="count">(8)</span>
                                 </label>
                             </li>
                         </ul>
@@ -80,46 +86,55 @@
                     </div>
                 </div>
                 <div class="row">
-                    @for(int i = 0; i< 9; i++) { 
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="single-product">
-                            <div class="product-img">
-                                <a href="/Products/ProductDetails">
-                                    <img  class="default-img" src="~/Assets/images/hoa_chat/acid-huu-co-1.jpg" />
-                                </a>
-                            </div>
-                            <div class="product-content">
-                                <a href="product-details.html">Acid Acetic 97 - 99%</a>
-                                <div class="rating">
-                                    <i class="yellow fa fa-star"></i>
-                                    <i class="yellow fa fa-star"></i>
-                                    <i class="yellow fa fa-star"></i>
-                                    <i class="yellow fa fa-star"></i>
-                                    <i class="fa fa-star"></i>
+                    @foreach (Product item in Model.ListOfProducts)
+                    {
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-product">
+                                <div class="product-img">
+                                    <a href="@Url.Action("ProductDetails","Products", new {id = item.Id_product}) ">
+                                        <img class="default-img" src="@item.Url_img_product" />
+                                    </a>
                                 </div>
-                                <div class="product-price">
-                                    <span>2,900,000đ</span>
+                                <div class="product-content">
+                                    <a href="@Url.Action("ProductDetails","Products", new {id = item.Id_product})">@item.Name_product</a>
+                                    <div class="rating">
+                                        @for (int i = 0; i < item.Star; i++)
+                                        {
+                                            <i class="yellow fa fa-star"></i>
+                                        }
+                                        @for (int i = item.Star; i < 5; i++)
+                                        {
+                                            <i class="fa fa-star"></i>
+                                        }
+                                    </div>
+                                    <div class="product-price">
+                                        @if (item.Listed_price != item.Current_price)
+                                        {
+                                            <span class="old">@string.Format("{0:0,0 vnđ}", item.Listed_price)  </span>
+                                            <br />
+                                            <span>@string.Format("{0:0,0 vnđ}", item.Current_price)</span>
+                                        }
+                                        else
+                                        {
+                                            <br />
+                                            <span>@string.Format("{0:0,0 vnđ}", item.Current_price)</span>
+                                        }
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>}
+                    }
                 </div>
 
                 <!-- Pagination -->
                 <div class="pagination d-flex justify-content-center mt-5">
                     <div class="pagination-container">
-                        <a class="control" href="#"><i class="bi-chevron-left"></i></a>
-                        <a href="#">1</a>
-                        <a href="#">2</a>
-                        <a class="active" href="#">3</a>
-                        <a href="#">4</a>
-                        <a href="#">5</a>
-                        <a href="#">6</a>
-                        <a href="#">137</a>
-                        <a class="control" href="#"><i class="bi-chevron-right"></i></a>
+                         @Html.PagedListPager(Model.ListOfProducts, page => Url.Action("ListProducts", new { page }))
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
