@@ -11,7 +11,14 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC
     {
         public static void RegisterRoutes(RouteCollection routes)
         {
+
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            routes.MapRoute(
+                name: "Default",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            );
 
             routes.MapRoute(
                name: "Product-details",
@@ -31,11 +38,6 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC
             );
            
 
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
 
 
         }
