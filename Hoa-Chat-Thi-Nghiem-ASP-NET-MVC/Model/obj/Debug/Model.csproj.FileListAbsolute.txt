@@ -193,7 +193,6 @@ C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghi
 C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\obj\Debug\Model.csprojAssemblyReference.cache
 C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\obj\Debug\Model.csproj.CopyComplete
 C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Model\obj\Debug\Model.dll
