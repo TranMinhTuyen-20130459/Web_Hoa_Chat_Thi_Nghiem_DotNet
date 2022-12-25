@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC
@@ -12,6 +8,12 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            routes.MapRoute(
+                name: "Default",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            );
 
             routes.MapRoute(
                name: "Product-details",
@@ -29,13 +31,8 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Cart", action = "ShoppingCart", id = UrlParameter.Optional }
             );
-           
 
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+
 
 
         }

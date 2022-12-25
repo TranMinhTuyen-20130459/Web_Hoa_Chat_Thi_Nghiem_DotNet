@@ -82,10 +82,12 @@ namespace Program
             //TestProductService.TestGetListTypeStatusSupplier();
 
             //TestNewsService.TestAddNews();
-            ProductDAO ser = new ProductDAO();
+            //ProductDAO ser = new ProductDAO();
             //Console.WriteLine("Hi");
             //Console.WriteLine("Size "+ser.findAll().Count);
-               
+
+            //TestNewsDAO.TestGetNews();
+            TestNewsService.TestGetNews();
             Console.Read();
         }
     }

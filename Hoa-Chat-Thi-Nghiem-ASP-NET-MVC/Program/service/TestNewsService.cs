@@ -17,5 +17,10 @@ namespace Program.service
 
             Console.WriteLine(NewsService.AddNews(news,admin));
         }
+     
+        public static void TestGetNews()
+        {
+            Console.WriteLine(NewsService.GetNews());
+        }
     }
 }

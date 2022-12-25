@@ -28,5 +28,20 @@ namespace Model.service
             }
             return false;
         }
+        
+        public static News GetNews()
+        {
+            DBConnection connectDB = DBConnection.GetInstall();
+            NewsDAO dao = new NewsDAO();
+            try
+            {
+                return dao.getNews(connectDB);
+            }
+            finally
+            {
+                connectDB.UnInstall();
+            }
+        }
+             
     }
 }
