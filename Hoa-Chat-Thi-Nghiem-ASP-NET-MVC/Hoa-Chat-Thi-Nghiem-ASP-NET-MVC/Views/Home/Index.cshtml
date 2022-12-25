@@ -271,7 +271,7 @@
                                     <a href="@Url.Action("ProductDetails", "Products", new {id = list[i].Id_product})">
                                         <img src="@list[i].Url_img_product" />
                                     </a>
-                                    <a href="" onclick="addItem(@list[i].Id_product)" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                    <a style="cursor:pointer" onclick="addItem(@list[i].Id_product);window.location.reload()" class="buy"><i class="fa fa-shopping-bag"></i></a>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-12">
@@ -297,7 +297,7 @@
                                     <a href="@Url.Action("ProductDetails", "Products", new {id = list[i].Id_product})">
                                         <img src="@list[i].Url_img_product" />
                                     </a>
-                                    <a href="" onclick="addItem(@list[i].Id_product)" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                    <a style="cursor:pointer" onclick="addItem(@list[i].Id_product);window.location.reload()" class="buy"><i class="fa fa-shopping-bag"></i></a>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-12">
@@ -323,7 +323,7 @@
                                         <a href="@Url.Action("ProductDetails", "Products", new {id = list[i].Id_product})">
                                             <img src="@list[i].Url_img_product" />
                                         </a>
-                                        <a href="" onclick="addItem(@list[i].Id_product)" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                        <a style="cursor:pointer" onclick="addItem(@list[i].Id_product);window.location.reload()" class="buy"><i class="fa fa-shopping-bag"></i></a>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-12">
