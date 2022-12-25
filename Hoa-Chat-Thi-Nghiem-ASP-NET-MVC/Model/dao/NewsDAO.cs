@@ -1,6 +1,7 @@
 ﻿using Model.db;
 using Model.entity;
 using MySql.Data.MySqlClient;
+using System;
 
 namespace Model.dao
 {
@@ -27,6 +28,34 @@ namespace Model.dao
                 return false;
             }
             return false;
+        }
+
+        public News getNews(DBConnection connectDB)
+        {
+            string sql = "select id_news,title_news,content_news,date_posted from news order by date_posted desc Limit 1;";
+            try
+            {
+                MySqlCommand sqlCommand = connectDB.GetMySqlCommand();
+                sqlCommand.CommandText = sql;
+                MySqlDataReader reader = sqlCommand.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    while (reader.Read())
+                    {
+                        int id = reader.GetInt32("id_news");
+                        string title = reader.GetString("title_news");
+                        string content = reader.GetString("content_news");
+                        DateTime date = reader.GetDateTime("date_posted");
+                        News news = new News(id, title, content, date);
+                        return news;
+                    }
+                }
+            }
+            catch (MySqlException e)
+            {
+                System.Console.WriteLine(e.Message);
+            } 
+            return null;
         }
     }
 }
