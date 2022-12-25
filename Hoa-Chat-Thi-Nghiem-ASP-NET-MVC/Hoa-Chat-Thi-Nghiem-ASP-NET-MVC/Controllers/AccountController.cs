@@ -5,13 +5,14 @@ using System.Web.Mvc;
 using System.Web.Security;
 using System;
 using System.Web.Helpers;
+using Model.entity;
 
 namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
 {
     public class AccountController : Controller
     {
-        string emailForForgotPass = null;
         // GET: Account
+        [Authorize]
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
@@ -31,8 +32,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
                 string email = model.email;
                 if (!CustomerService.checkExsit(email))
                 {
-                    emailForForgotPass = email;
-                    Session["email"] = emailForForgotPass;
+                    Session["email"] = email;
                     return RedirectToAction("ConfirmPassword", "Account");
                 }
                 else
@@ -48,7 +48,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
         {
             if (Session["email"] == null)
             {
-                return View("ForgotPassword");
+                return RedirectToAction("ForgotPassword", "Account");
             }
             else
             {
@@ -66,7 +66,8 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
                     string confirm_newPass = model.confirm_newPass;
                     if (newPass.Equals(confirm_newPass))
                     {
-                        CustomerService.changePass(emailForForgotPass, newPass);
+                    string email = (string)(Session["email"]);
+                        CustomerService.changePass(email, newPass);
                         ViewBag.success_newPass = "Đổi mật khẩu thành công";
                         Session.Remove("email");
                     }
@@ -84,6 +85,39 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
         public ActionResult ChangePassword()
         {
             return View();
+        }
+
+        public ActionResult changePasswordAccount(ChangePassCustomerModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var customer = Session["auth_customer"];
+                if (customer != null)
+                {
+                    string oldPass = ((Customer)customer).Password;
+                    string email = ((Customer)customer).Username;
+                    string confirm_old = model.oldPass;
+                    string newPass = model.newPass;
+                    string confirm_new = model.newPass;
+                    if (oldPass.Equals(confirm_old))
+                    {
+                        if (newPass.Equals(confirm_new))
+                        {
+                            CustomerService.changePass(email, newPass);
+                            ViewBag.success_newPass = "Đổi mật khẩu thành công";
+                        }
+                        else
+                        {
+                            ModelState.AddModelError("", "Xác thực mật khẩu mới không hợp lệ");
+                        }
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Xác thực lại mật khẩu cũ");
+                    }
+                }
+            }
+            return View("ChangePassword");
         }
         [HttpGet]
         public ActionResult Register()
@@ -104,7 +138,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
                     if (password.Equals(confirm_pass))
                     {
                         CustomerService.register(email,password);
-                        ModelState.AddModelError("", "Đăng ký thành công");
+                        return RedirectToAction("Login", "Account");
                     }
                     else
                     {
