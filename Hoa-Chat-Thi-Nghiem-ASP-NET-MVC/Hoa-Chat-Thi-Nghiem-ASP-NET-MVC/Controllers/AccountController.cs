@@ -98,7 +98,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
                     string email = ((Customer)customer).Username;
                     string confirm_old = model.oldPass;
                     string newPass = model.newPass;
-                    string confirm_new = model.newPass;
+                    string confirm_new = model.confirm_newPass;
                     if (oldPass.Equals(confirm_old))
                     {
                         if (newPass.Equals(confirm_new))
