@@ -9,13 +9,13 @@ namespace Model.dao
     public class CustomerDAO
     {
         public CustomerDAO() { }
-
+            public DBConnection connectDB = null;
         public ArrayList getCustomers(string username)
         {
             string query = "select id_user_customer, username, pass, id_status_acc, id_city, " +
                 "fullname from account_customer where username = @username";
             ArrayList result = new ArrayList();
-            DBConnection connectDB = DBConnection.GetInstall(); // mở kết nối đến mysql
+            connectDB = DBConnection.GetInstall(); // mở kết nối đến mysql
             try
             {
                 MySqlCommand command = connectDB.GetMySqlCommand(); // đối tượng để thực thi câu lệnh sql
@@ -58,7 +58,7 @@ namespace Model.dao
 
         public bool checkExsit(string email)
         {
-            DBConnection connectDB = DBConnection.GetInstall();
+            connectDB = DBConnection.GetInstall();
             string sql = "SELECT * FROM account_customer where username = @email";
             ArrayList result = new ArrayList();
             try
@@ -93,12 +93,12 @@ namespace Model.dao
 
         public void register(string email, string password)
         {
-            DBConnection connectDb = DBConnection.GetInstall();
+            connectDB = DBConnection.GetInstall();
             string sql = "INSERT INTO account_customer(username, pass, id_status_acc, id_city) " +
                 "VALUES(@email, @password, 1, 1)";
             try
             {
-                MySqlCommand command = connectDb.GetMySqlCommand();
+                MySqlCommand command = connectDB.GetMySqlCommand();
                 command.CommandText = sql;
                 command.Parameters.AddWithValue("email", email);
                 command.Parameters.AddWithValue("password", password);
@@ -110,12 +110,12 @@ namespace Model.dao
             }
             finally
             {
-                connectDb.UnInstall();
+                connectDB.UnInstall();
             }
         }
         public void changePass(string email, string newPass)
         {
-            DBConnection connectDB = DBConnection.GetInstall();
+            connectDB = DBConnection.GetInstall();
             String sql = "UPDATE account_customer " +
                 "SET pass = @newPass, time_change_pass = current_timestamp()" +
                 " WHERE username = @email";
