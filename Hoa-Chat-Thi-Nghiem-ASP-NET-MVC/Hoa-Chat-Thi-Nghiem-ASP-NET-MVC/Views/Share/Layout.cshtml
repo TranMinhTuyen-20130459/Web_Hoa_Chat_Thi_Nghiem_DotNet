@@ -172,7 +172,7 @@
                             <div class="right-bar-item shopping d-inline-block mr-4">
                                 @{
                                     int total = 0;
-                                    var list = (List<Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Models.CartItem>)Session["CartSession"];
+                                    var list = (List<Model.entity.CartItem>)Session["CartSession"];
                                     int quantityItem = ((list == null) ? 0 : list.Count());
                                 }
                                 <a href="/Cart/ShoppingCart" class="single-icon"><i class="fa fa-shopping-cart"></i><span class="total-count">@quantityItem</span></a>
@@ -189,11 +189,11 @@
                                         @{
                                             if (list == null)
                                             {
-                                                <h1>Ko co gi</h1>
+                                                
                                             }
                                             else
                                             {
-                                                foreach (Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Models.CartItem item in list)
+                                                foreach (Model.entity.CartItem item in list)
                                                 {
                                                     <li>
                                                         <a href="" onclick="deleteItem(@item.Product.Id_product)" class="remove" title="Remove this item"><i class="fa fa-remove"></i></a>
@@ -447,6 +447,6 @@
     <script src='@Url.Content("~/Scripts/jquery-1.8.2.js")' type='text/javascript'></script>
     <script src='@Url.Content("~/Scripts/jquery.validate.js")' type='text/javascript'></script>
     <script src='@Url.Content("~/Scripts/jquery.validate.unobtrusive.js")' type='text/javascript'></script>
-    <script src="~/Assets/shop/js/add-item-cart.js"></script>
+    <script src="~/Assets/shop/js/update-item-cart.js"></script>
 </body>
 </html>

@@ -68,20 +68,20 @@
                 <div class="quantity d-inline-block mr-3">
                     <div class="input-group">
                         <div class="button minus">
-                            <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant">
+                            <button type="button" class="btn btn-primary btn-number" disabled="disabled" data-type="minus" data-field="quant_@list[0].Id_product">
                                 <i class="ti-minus"></i>
                             </button>
                         </div>
-                        <input type="text" name="quant" class="input-number" data-min="1" data-max="@list[0].Quantity_product" value="1" />
+                        <input type="text" name="quant_@list[0].Id_product" class="input-number" data-min="1" data-max="@list[0].Quantity_product" value="1" />
                         <div class="button plus">
-                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant">
+                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant_@list[0].Id_product">
                                 <i class="ti-plus"></i>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="add-to-cart d-inline-block">
-                    <a href="" onclick="addItem(@list[0].Id_product)" class="btn">Thêm vào giỏ hàng</a>
+                    <a href="" onclick="addItems(@list[0].Id_product,4,true)" class="btn">Thêm vào giỏ hàng</a>
                 </div>
                 <div class="product-stock">
                     <span>@list[0].Quantity_product sản phẩm có sẵn</span>
