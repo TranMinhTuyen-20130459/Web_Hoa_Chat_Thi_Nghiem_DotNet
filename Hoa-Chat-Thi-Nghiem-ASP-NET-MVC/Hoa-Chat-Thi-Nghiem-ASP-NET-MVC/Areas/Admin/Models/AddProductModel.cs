@@ -30,7 +30,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Areas.Admin.Models
         //public int Supplier { get; set; }
 
         [Required(ErrorMessage = "Mời nhập mô tả của sản phẩm")]
-        [MinLength(100,ErrorMessage ="Mô tả sản phẩm phải ít nhất 100 kí tự !!!")]
+        [MinLength(20,ErrorMessage ="Mô tả sản phẩm phải ít nhất 20 kí tự !!!")]
         public string Description { get; set; }
 
         //[Required(ErrorMessage = "Hãy chọn hình ảnh cho sản phẩm")]
