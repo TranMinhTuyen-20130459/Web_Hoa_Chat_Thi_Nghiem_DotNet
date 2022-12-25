@@ -408,6 +408,7 @@ E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Ngh
 E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\PagedList.Mvc.dll
 E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\PagedList.xml
 E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\PagedList.Mvc.xml
+<<<<<<< HEAD
 C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC.dll.config
 C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC.dll
 C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC.pdb
@@ -620,3 +621,9 @@ C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghi
 C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\obj\Debug\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC.csproj.CopyComplete
 C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\obj\Debug\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC.dll
 C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\obj\Debug\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC.pdb
+=======
+D:\Cac-Phan-Mem-Hoc\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\PagedList.dll
+D:\Cac-Phan-Mem-Hoc\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\PagedList.Mvc.dll
+D:\Cac-Phan-Mem-Hoc\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\PagedList.xml
+D:\Cac-Phan-Mem-Hoc\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\bin\PagedList.Mvc.xml
+>>>>>>> a58a26c80d0619ccb96ca9432a31e2a834480463

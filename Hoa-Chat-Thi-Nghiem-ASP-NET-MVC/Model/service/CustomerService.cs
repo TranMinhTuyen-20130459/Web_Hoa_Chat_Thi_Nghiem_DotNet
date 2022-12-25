@@ -33,6 +33,11 @@ namespace Model.service
         {
             dao.register(email, password);
         }
+
+        public static void changePass(string email, string newPass)
+        {
+            dao.changePass(email, newPass);
+        }
     }
 }
 

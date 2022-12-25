@@ -1258,6 +1258,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CartItem.cs" />
+    <Compile Include="Models\ChangePassCustomerModel.cs" />
+    <Compile Include="Models\ConfirmPasswordCustomerModel.cs" />
+    <Compile Include="Models\ForgotPassCustomerModel.cs" />
     <Compile Include="Models\LoginCustomerModel.cs" />
     <Compile Include="Models\ProductsModel.cs" />
     <Compile Include="Models\RegisterCustomerModel.cs" />
@@ -1318,6 +1321,7 @@
     <Content Include="Views\Share\Layout.cshtml" />
     <Content Include="Views\Share\LayoutLogin.cshtml" />
     <Content Include="Views\Account\ChangePassword.cshtml" />
+    <Content Include="Views\Account\ConfirmPassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
