@@ -238,7 +238,8 @@ namespace Model.dao
                 String query = "SELECT * FROM PRODUCTS AS P " +
                     "INNER JOIN TYPE_PRODUCT AS TP ON P.id_type_product = TP.id_type_product " +
                     "INNER JOIN STATUS_PRODUCT AS SP ON P.id_status_product = SP.id_status_product " +
-                    "INNER JOIN price_product AS PP ON PP.id_product = P.id_product ";
+                    "INNER JOIN price_product AS PP ON PP.id_product = P.id_product " +
+                    "ORDER BY P.DATE_INSERTED DESC ";
 
 
                 MySqlCommand cmd = connectDB.GetMySqlCommand();

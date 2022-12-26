@@ -105,6 +105,7 @@
     <Compile Include="dao\ProductDAO.cs" />
     <Compile Include="db\DBConnection.cs" />
     <Compile Include="entity\Admin.cs" />
+    <Compile Include="entity\CartItem.cs" />
     <Compile Include="entity\Customer.cs" />
     <Compile Include="entity\News.cs" />
     <Compile Include="entity\Product.cs" />
