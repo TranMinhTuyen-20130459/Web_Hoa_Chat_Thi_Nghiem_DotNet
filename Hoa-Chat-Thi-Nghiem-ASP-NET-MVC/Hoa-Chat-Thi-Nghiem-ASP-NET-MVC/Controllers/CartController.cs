@@ -6,7 +6,6 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Model.entity;
-using CartItem = Model.entity.CartItem;
 
 namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
 {
@@ -47,6 +46,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
                 else
                     cartItem.Quantity = quantity;
                 list.Add(cartItem);
+                Session[CartSession] = list;
             }
             else
             {
@@ -77,10 +77,14 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
                 {
                     if (item.Product.Id_product == idProduct)
                     {
+                        if (item.Product.Quantity_product <= item.Quantity)
+                        {
 
-                        item.Quantity++;
-
-
+                        }
+                        else
+                        {
+                            item.Quantity++;
+                        }
                         Session[CartSession] = list;
                         return View("ShoppingCart");
                     }
@@ -88,14 +92,23 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
                 //Nếu chưa có thì tạo mới CartItem
                 CartItem cartItem = new CartItem();
                 cartItem.Product = ProductService.findOneProductById(idProduct)[0];
+                if (cartItem.Product.Quantity_product == 0)
+                {
+                    return View();
+                }
                 cartItem.Quantity = 1;
                 list.Add(cartItem);
+                Session[CartSession] = list;
             }
             else
             {
                 //tạo mới Cart Item và Cart
                 var item = new CartItem();
                 item.Product = ProductService.findOneProductById(idProduct)[0];
+                if (item.Product.Quantity_product == 0)
+                {
+                    return View();
+                }
                 item.Quantity = 1;
                 list = new List<CartItem>();
                 list.Add(item);
@@ -110,8 +123,8 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
             var list = (List<CartItem>)Session[CartSession];
             if (list != null)
             {
-                //Tìm sản phẩm cần add có trong Cart hay không
-                //Nếu có thì tăng Quantity
+                //Tìm sản phẩm có trong Cart hay không
+                //Nếu có thì giảm Quantity
                 foreach (var item in list)
                 {
                     if (item.Product.Id_product == idProduct)
@@ -126,7 +139,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
                 }
                 //Nếu không tồn tại thì không làm gì
             }
-           
+
             return View("ShoppingCart");
         }
         public ActionResult RemoveItem(int idProduct)
