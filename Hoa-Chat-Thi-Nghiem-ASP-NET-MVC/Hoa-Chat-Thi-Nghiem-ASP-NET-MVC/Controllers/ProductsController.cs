@@ -15,7 +15,7 @@ namespace Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Controllers
         public ActionResult ListProducts(int id, int? page)
         {
             ProductsModel model = new ProductsModel();
-            return View(model.CreateModel(id, 3, page));
+            return View(model.CreateModel(id, 5, page));
         }
         public ActionResult ProductDetails(int id)
         {
