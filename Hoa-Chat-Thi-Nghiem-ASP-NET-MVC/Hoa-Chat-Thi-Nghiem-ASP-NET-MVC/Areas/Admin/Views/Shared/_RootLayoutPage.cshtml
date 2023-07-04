@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+
+    <!-- ===== STYLESHEET ===== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+
+    <link href="~/Assets/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Assets/admin/css/main.css" rel="stylesheet" />
+
+</head>
+
+<body class="app sidebar-mini rtl">
+    <!-- Header -->
+    <header class="app-header">
+        <a class="app-sidebar-toggle" href="#" data-toggle="sidebar" aria-label="Hide Sidebar"></a>
+        <ul class="app-nav">
+            <li>
+                <a class="app-nav-item" href="/Admin/Login/Index"><i class='bx bx-log-out bx-rotate-180'></i></a>
+            </li>
+        </ul>
+    </header>
+
+    <!-- Sidebar Menu -->
+    <div class="app-sidebar-overlay" data-toggle="sidebar"></div>
+    <aside class="app-sidebar">
+        <div class="app-sidebar-user">
+            <img class="admin-avatar" src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="User Image">
+            <p class="app-sidebar-user-name"><b>Admin-Root</b></p>
+            <p class="app-sidebar-user-designation">Chào mừng bạn trở lại</p>
+        </div>
+        <hr>
+        <ul class="app-menu">
+            <li>
+                <a class="app-menu-item haha" href="/Admin/RootHome/Index">
+                    <i class='bx bx-tachometer'></i>
+                    <span class="app-menu-label">Trang chủ</span>
+                </a>
+            </li>
+            <li>
+                <a class="app-menu-item" href="/Admin/RootAdminsManager/Index">
+                    <i class='bx bx-id-card'></i>
+                    <span class="app-menu-label">Quản lý admin</span>
+                </a>
+            </li>
+            <li>
+                <a class="app-menu-item" href="/Admin/RootCustomersManager/Index">
+                    <i class='bx bx-id-card'></i>
+                    <span class="app-menu-label">Quản lý khách hàng</span>
+                </a>
+            </li>
+            <li>
+                <a class="app-menu-item" href="/Admin/RootSettings/Index">
+                    <i class='bx bx-cog'></i>
+                    <span class="app-menu-label">Đổi mật khẩu</span>
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    @RenderBody()
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="~/Assets/admin/vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="~/Assets/admin/vendor/bootstrap/js/popper.min.js"></script>
+    <script src="~/Assets/admin/vendor/plugins/pace.min.js"></script>
+    <script src="~/Assets/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/Assets/admin/vendor/plugins/chart.js"></script>
+    <script src="~/Assets/admin/js/main.js"></script>
+    <!-- ================================================================================================== -->
+</body>
+
+</html>

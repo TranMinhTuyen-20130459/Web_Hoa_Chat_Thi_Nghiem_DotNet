@@ -1,0 +1,108 @@
+﻿@using Model.entity;
+@{
+    ViewBag.Title = "News";
+    Layout = "~/Views/Share/Layout.cshtml";
+    var baiviet =(News) ViewBag.BaiViet;
+}
+
+<div class="breadcrumbs py-4">
+    <div class="container text-left">
+        <ul class="bread-list d-inline-block">
+            <li class="d-inline-block text-capitalize"><a href="/Home/Index">Trang chủ<i class="ti-arrow-right mx-2"></i></a></li>
+            <li class="d-inline-block text-capitalize"><a href="/News/News">Tin tức</a></li>
+        </ul>
+    </div>
+</div>
+<section class="blog-single">
+    <div class="container">
+        <div class="row">   
+            <div class="col-lg-8 col-12">
+                <div class="row"><p style="font-weight:bold">@baiviet.Title</p></div>
+                <div class="row">@Html.Raw(baiviet.Content)</div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="main-sidebar mt-4">
+                    <!-- Single Widget -->
+                    <div class="single-widget search mb-5 position-relative">
+                        <div class="form">
+                            <input type="email" placeholder="Tìm kiếm...">
+                            <a class="button" href="#"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Single Widget -->
+                    <div class="single-widget category mb-5">
+                        <h3 class="title">Danh mục tin tức</h3>
+                        <ul class="category-list">
+                            <li><a href="#">Hóa Trị 1</a></li>
+                            <li><a href="#">Sulfuric Đặc Hiệu</a></li>
+                            <li><a href="#">Vôi Phân Hủy</a></li>
+                            <li><a href="#">Cho Giáo Dục</a></li>
+                            <li><a href="#">Doanh Nghiệp</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Single Widget -->
+                    <div class="single-widget recent-post mb-5">
+                        <h3 class="title">Bài viết gần đây</h3>
+                        <!-- Single Post -->
+                        <div class="single-post">
+                            <div class="image position-relative">
+                                <img src="../images/tin_tuc/100x100/tin_01.jpg" alt="#">
+                            </div>
+                            <div class="content">
+                                <h5><a href="#">Top 10 Hóa Chất Được Dùng Nhiều Nhất</a></h5>
+                                <ul class="comment">
+                                    <li><i class="fa fa-calendar" aria-hidden="true"></i>11/01/2022</li>
+                                    <li class="mr-0"><i class="fa fa-commenting-o" aria-hidden="true"></i>35</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Single Post -->
+                        <div class="single-post">
+                            <div class="image position-relative">
+                                <img src="../images/tin_tuc/100x100/tin_02.jpg" alt="#">
+                            </div>
+                            <div class="content">
+                                <h5><a href="#">Axit Mạnh Nhất Thế Giới, Phá Hủy...</a></h5>
+                                <ul class="comment">
+                                    <li><i class="fa fa-calendar" aria-hidden="true"></i>05/03/2021</li>
+                                    <li class="mr-0"><i class="fa fa-commenting-o" aria-hidden="true"></i>59</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Single Post -->
+                        <div class="single-post pb-0 border-0">
+                            <div class="image position-relative">
+                                <img src="../images/tin_tuc/100x100/tin_03.png" alt="#">
+                            </div>
+                            <div class="content">
+                                <h5><a href="#">Bộ Hóa Công Bố Chương Trình Khuyến Mãi...</a></h5>
+                                <ul class="comment">
+                                    <li><i class="fa fa-calendar" aria-hidden="true"></i>09/06/2022</li>
+                                    <li class="mr-0"><i class="fa fa-commenting-o" aria-hidden="true"></i>44</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Widget -->
+                    <div class="single-widget side-tags">
+                        <h3 class="title">Từ khóa</h3>
+                        <ul class="tag">
+                            <li><a href="#">doanh nghiệp</a></li>
+                            <li><a href="#">wordpress</a></li>
+                            <li><a href="#">html</a></li>
+                            <li><a href="#">đa nền tảng</a></li>
+                            <li><a href="#">giáo dục</a></li>
+                            <li><a href="#">kinh doanh</a></li>
+                            <li><a href="#">an toàn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

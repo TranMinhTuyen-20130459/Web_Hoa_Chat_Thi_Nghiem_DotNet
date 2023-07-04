@@ -1,0 +1,414 @@
+﻿@using System.Collections;
+@using System.Collections.Generic;
+@using Model.entity;
+@{
+    ViewBag.Title = "Trang chủ";
+    Layout = "~/Views/Share/Layout.cshtml";
+    List<Product> list = ViewBag.ListProducts;
+    List<Product> id17 = ViewBag.ProductsId17;
+    List<Product> dsHoachat = ViewBag.Dshoachat;
+    List<Product> dsDungcu = ViewBag.Dsdungcu;
+    List<Product> dsThietbi = ViewBag.Dsthietbi;
+}
+
+<section class="hero-slider">
+    <div class="single-slider">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-8 col-12">
+                    <div class="row">
+                        <div class="hero-text">
+                            <h1>
+                                <span>GIẢM ĐẾN 50% </span>Isoamyl acetate Emplura Merck Đức
+                            </h1>
+                            <p>
+                                Isoamyl acetate Emplura Là chất lỏng không màu. Được tạo mùi
+                                chuối trong thực phẩm, dùng làm dung môi vecni và sơn mài,
+                                dùng để kiểm tra hiệu quả của mặt nạ chống độc và mặt nạ
+                                khí. Độ tinh khiết: ≥ 99.0 % (a/a). Quy cách: Chai thủy tinh
+                                1000ml.
+                            </p>
+                            <div class="button">
+                                <a href="#" class="btn">Mua Ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="newest-products">
+    <div class="container">
+        <div class="section-title">
+            <h2>Sản phẩm mới nhất</h2>
+        </div>
+        <div class="owl-carousel newest-slider">
+            @for (int i = 0; i < 5; i++)
+            {
+                <div class="single-product mt-0 mb-0 mr-3 ml-3">
+                    <div class="product-img">
+                        <a href="@Url.Action("ProductDetails", "Products", new {id = list[i].Id_product })">
+                            <img class="default-img" src="@list[i].Url_img_product" />
+                            <span class="hot">Hot</span>
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <a href="@Url.Action("ProductDetails", "Products", new {id = list[i].Id_product})">@list[i].Name_product</a>
+                        <div class="rating">
+                            @for (int j = 0; j < list[i].Star; j++)
+                            {
+                                <i class="yellow fa fa-star"></i>
+                            }
+                            @for (int j = list[i].Star; j < 5; j++)
+                            {
+                                <i class="fa fa-star"></i>
+                            }
+                        </div>
+                        <div class="product-price">
+                            @if (list[i].Listed_price != list[i].Current_price)
+                            {
+                                <span class="old">@string.Format("{0:0,0 vnđ}", list[i].Listed_price)  </span>
+                                <br />
+                                <span>@string.Format("{0:0,0 vnđ}", list[i].Current_price)</span>
+                            }
+                            else
+                            {
+                                <br />
+                                <span>@string.Format("{0:0,0 vnđ}", list[i].Current_price)</span>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<div class="product-area">
+    <div class="container">
+        <!-- Title -->
+        <div class="section-title">
+            <h2>Sản phẩm tiêu biểu</h2>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="product-info">
+                    <div class="nav-main">
+                        <!-- Tab Nav -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item d-inline-block">
+                                <a class="nav-link active" data-toggle="tab" href="#hoa-chat" role="tab">Hóa chất</a>
+                            </li>
+                            <li class="nav-item d-inline-block">
+                                <a class="nav-link" data-toggle="tab" href="#dung-cu" role="tab">Dụng cụ</a>
+                            </li>
+                            <li class="nav-item d-inline-block">
+                                <a class="nav-link" data-toggle="tab" href="#thiet-bi" role="tab">Thiết bị</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <!-- Hóa Chất -->
+                        <div class="tab-pane fade show active" id="hoa-chat" role="tabpanel">
+                            <div class="tab-single">
+                                <div class="row">
+                                    @for (int i = 0; i < (dsHoachat.Count > 8 ? 8 : dsHoachat.Count); i++)
+                                    {
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="@Url.Action("ProductDetails", "Products", new {id = dsHoachat[i].Id_product})">
+                                                        <img class="default-img" src="@dsHoachat[i].Url_img_product" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-content">
+                                                    <a href="@Url.Action("ProductDetails", "Products", new {id = dsHoachat[i].Id_product})">@dsHoachat[i].Name_product</a>
+                                                    <div class="rating">
+                                                        @for (int j = 0; j < dsHoachat[i].Star; j++)
+                                                        {
+                                                            <i class="yellow fa fa-star"></i>
+                                                        }
+                                                        @for (int j = dsHoachat[i].Star; j < 5; j++)
+                                                        {
+                                                            <i class="fa fa-star"></i>
+                                                        }
+                                                    </div>
+                                                    <div class="product-price">
+                                                        @if (dsHoachat[i].Listed_price != dsHoachat[i].Current_price)
+                                                        {
+                                                            <span class="old">@string.Format("{0:0,0 vnđ}", dsHoachat[i].Listed_price)  </span>
+                                                            <br />
+                                                            <span>@string.Format("{0:0,0 vnđ}", dsHoachat[i].Current_price)</span>
+                                                        }
+                                                        else
+                                                        {
+                                                            <br />
+                                                            <span>@string.Format("{0:0,0 vnđ}", dsHoachat[i].Current_price)</span>
+                                                        }
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dụng Cụ -->
+                        <div class="tab-pane fade" id="dung-cu" role="tabpanel">
+                            <div class="tab-single">
+                                <div class="row">
+                                    @for (int i = 0; i < (dsDungcu.Count > 8 ? 8 : dsDungcu.Count); i++)
+                                    {
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="@Url.Action("ProductDetails", "Products", new {id = dsDungcu[i].Id_product})">
+                                                        <img class="default-img" src="@dsDungcu[i].Url_img_product" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-content">
+                                                    <a href="@Url.Action("ProductDetails", "Products", new {id = dsDungcu[i].Id_product})">@dsDungcu[i].Name_product</a>
+                                                    <div class="rating">
+                                                        @for (int j = 0; j < dsDungcu[i].Star; j++)
+                                                        {
+                                                            <i class="yellow fa fa-star"></i>
+                                                        }
+                                                        @for (int j = dsDungcu[i].Star; j < 5; j++)
+                                                        {
+                                                            <i class="fa fa-star"></i>
+                                                        }
+                                                    </div>
+                                                    <div class="product-price">
+                                                        @if (dsDungcu[i].Listed_price != dsDungcu[i].Current_price)
+                                                        {
+                                                            <span class="old">@string.Format("{0:0,0 vnđ}", dsDungcu[i].Listed_price)  </span>
+                                                            <br />
+                                                            <span>@string.Format("{0:0,0 vnđ}", dsDungcu[i].Current_price)</span>
+                                                        }
+                                                        else
+                                                        {
+                                                            <br />
+                                                            <span>@string.Format("{0:0,0 vnđ}", dsDungcu[i].Current_price)</span>
+                                                        }
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Thiết Bị -->
+                        <div class="tab-pane fade" id="thiet-bi" role="tabpanel">
+                            <div class="tab-single">
+                                <div class="row">
+                                    @for (int i = 0; i < (dsThietbi.Count > 8 ? 8 : dsThietbi.Count); i++)
+                                    {
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-12">
+                                            <div class="single-product">
+                                                <div class="product-img">
+                                                    <a href="@Url.Action("ProductDetails", "Products", new {id = dsThietbi[i].Id_product})">
+                                                        <img class="default-img" src="@dsThietbi[i].Url_img_product" />
+                                                    </a>
+                                                </div>
+                                                <div class="product-content">
+                                                    <a href="@Url.Action("ProductDetails", "Products", new {id = dsThietbi[i].Id_product})">@dsThietbi[i].Name_product</a>
+                                                    <div class="rating">
+                                                        @for (int j = 0; j < dsThietbi[i].Star; j++)
+                                                        {
+                                                            <i class="yellow fa fa-star"></i>
+                                                        }
+                                                        @for (int j = dsThietbi[i].Star; j < 5; j++)
+                                                        {
+                                                            <i class="fa fa-star"></i>
+                                                        }
+                                                    </div>
+                                                    <div class="product-price">
+                                                        @if (dsThietbi[i].Listed_price != dsThietbi[i].Current_price)
+                                                        {
+                                                            <span class="old">@string.Format("{0:0,0 vnđ}", dsThietbi[i].Listed_price)  </span>
+                                                            <br />
+                                                            <span>@string.Format("{0:0,0 vnđ}", dsThietbi[i].Current_price)</span>
+                                                        }
+                                                        else
+                                                        {
+                                                            <br />
+                                                            <span>@string.Format("{0:0,0 vnđ}", dsThietbi[i].Current_price)</span>
+                                                        }
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== SHOP HOME LIST =====  -->
+<section class="shop-home-list">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="shop-list-title">
+                    <h1>Giảm giá</h1>
+                </div>
+                @for (int i = 5; i < 8; i++)
+                {
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image">
+                                    <a href="@Url.Action("ProductDetails", "Products", new {id = list[i].Id_product})">
+                                        <img src="@list[i].Url_img_product" />
+                                    </a>
+                                    <a style="cursor:pointer" onclick="addItem(@list[i].Id_product);window.location.reload()" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="content pt-5">
+                                    <a class="pname" href="@Url.Action("ProductDetails", "Products", new {id = list[i].Id_product})">@list[i].Name_product</a>
+                                    <p class="price">@string.Format("{0:0,0 vnđ}", list[i].Current_price)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="shop-list-title">
+                    <h1>Bán chạy</h1>
+                </div>
+                @for (int i = 8; i < 11; i++)
+                {
+                    <div class="single-list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="list-image">
+                                    <a href="@Url.Action("ProductDetails", "Products", new {id = list[i].Id_product})">
+                                        <img src="@list[i].Url_img_product" />
+                                    </a>
+                                    <a style="cursor:pointer" onclick="addItem(@list[i].Id_product);window.location.reload()" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="content pt-5">
+                                    <a class="pname" href="@Url.Action("ProductDetails", "Products", new {id = list[i].Id_product})">@list[i].Name_product</a>
+                                    <p class="price">@string.Format("{0:0,0 vnđ}", list[i].Current_price)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="shop-list-title">
+                    <h1>Xem nhiều</h1>
+                </div>
+                @for (int i = 11; i < 14; i++)
+                    {
+                        <div class="single-list">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="list-image">
+                                        <a href="@Url.Action("ProductDetails", "Products", new {id = list[i].Id_product})">
+                                            <img src="@list[i].Url_img_product" />
+                                        </a>
+                                        <a style="cursor:pointer" onclick="addItem(@list[i].Id_product);window.location.reload()" class="buy"><i class="fa fa-shopping-bag"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="content pt-5">
+                                        <a class="pname" href="@Url.Action("ProductDetails", "Products", new {id = list[i].Id_product})">@list[i].Name_product</a>
+                                        <p class="price">@string.Format("{0:0,0 vnđ}", list[i].Current_price)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ===== COUNTDOWN ===== -->
+<section class="countdown">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="image">
+                    <img class="default-img" src="@id17[0].Url_img_product" />
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="content">
+                    <div class="heading-block">
+                        <p class="small-title">Giảm giá trong ngày</p>
+                        <h3 class="title">@id17[0].Name_product</h3>
+                        <p>
+                            @id17[0].Desc_product
+                        </p>
+                        <h1 class="price">@string.Format("{0:0,0 vnđ}", id17[0].Current_price) <s>@string.Format("{0:0,0 vnđ}", id17[0].Listed_price)</s></h1>
+                        <div class="clearfix" data-countdown="2021/02/30"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SHOP BLOG =====  -->
+<section class="shop-blog">
+    <div class="container">
+        <div class="section-title">
+            <h2>Tin mới nhất</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="shop-single-blog">
+                    <a href="/News/News">
+                        <img src="~/Assets/images/tin_tuc/370x300/tin_01.jpg" />
+                    </a>
+                    <div class="content p-4">
+                        <p class="date">Thứ Hai, ngày 30/9/2022</p>
+                        <a href="/News/News" class="title">Bộ Hóa chất áp giá các sản phẩm được nhập khẩu từ Mỹ...</a>
+                        <a href="/News/News" class="more-btn">Tiếp tục đọc</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="shop-single-blog">
+                    <a href="/News/News">
+                        <img src="~/Assets/images/tin_tuc/370x300/tin_02.jpg" />
+                    </a>
+                    <div class="content p-4">
+                        <p class="date">Thứ Ba, ngày 31/9/2022</p>
+                        <a href="/News/News" class="title">Công bố chương trình khuyến mãi sản phẩm cho thí nghiệm...</a>
+                        <a href="/News/News" class="more-btn">Tiếp tục đọc</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="shop-single-blog">
+                    <a href="/News/News">
+                        <img src="~/Assets/images/tin_tuc/370x300/tin_03.jpg" />
+                    </a>
+                    <div class="content p-4">
+                        <p class="date">Chủ Nhật, ngày 29/9/2022</p>
+                        <a href="/News/News" class="title">Tổ chức huy hoạch 200 hecta đất để xây dựng nhà máy chế...</a>
+                        <a href="/News/News" class="more-btn">Tiếp tục đọc</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,106 @@
+﻿@{ 
+    ViewBag.Title = "ShoppingCart";
+    Layout = "~/Views/Share/Layout.cshtml";
+}
+@{
+    int total = 0;
+    var list = (List<Model.entity.CartItem>)Session["CartSession"];
+} 
+
+<div class="breadcrumbs py-4">
+    <div class="container text-left">
+        <ul class="bread-list d-inline-block">
+            <li class="d-inline-block text-capitalize"><a href="">Trang chủ<i class="ti-arrow-right mx-2"></i></a></li>
+            <li class="d-inline-block text-capitalize"><a href="">Giỏ hàng<i class="ti-arrow-right mx-2"></i></a></li>
+        </ul>
+    </div>
+</div>
+<div class="shopping-cart">
+    <div class="container">
+        <!-- Shopping Sumary -->
+        <table class="table shopping-summery bg-white">
+            <thead>
+                <tr class="main-hading">
+                    <th>SẢN PHẨM</th>
+                    <th>TÊN SẢN PHẨM</th>
+                    <th class="text-center">GIÁ</th>
+                    <th class="text-center">SỐ LƯỢNG</th>
+                    <th class="text-center">TỔNG</th>
+                    <th class="text-center">
+                        <i class="ti-trash remove-icon"></i>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    if (list == null)
+                    {
+                      
+                    }
+                    else
+                    {
+                        foreach (Model.entity.CartItem item in list)
+                        {
+                            <tr>
+                                <td class="image" data-title="No" style="padding: 15px">
+                                    <img src="@item.Product.Url_img_product" style="width:50px; height:50px;"  alt="#">
+                                </td>
+                                <td class="product-des" data-title="Description">
+                                    <p class="product-name">
+                                        <a href="@Url.Action("ProductDetails", "Products", new {id = item.Product.Id_product})">@item.Product.Name_product</a>
+                                    </p>
+                                    <p class="product-des">
+                                        @item.Product.Desc_product
+                                    </p>
+                                </td>
+                                <td class="price text-center" data-title="Price">
+                                    <span>@string.Format("{0:0,0 vnđ}", item.Product.Current_price)</span>
+                                </td>
+                                <td class="qty" data-title="Qty">
+                                    <!-- Input Order -->
+                                    <div class="input-group">
+                                        <div class="button minus">
+                                            <button type="button" class="btn btn-primary btn-number" data-type="minus" data-field="quant[@item.Product.Id_product]" onclick="minus(@item.Product.Id_product);window.location.reload()">
+                                                <i class="ti-minus"></i>
+                                            </button>
+                                        </div>
+                                        <input type="text" name="quant[@item.Product.Id_product]" class="input-number" data-min="1" data-max="@item.Product.Quantity_product" value="@item.Quantity">
+                                        <div class="button plus">
+                                            <button type="button" class="btn btn-primary btn-number" data-type="plus" data-field="quant[@item.Product.Id_product]" onclick="addItem(@item.Product.Id_product);window.location.reload()">
+                                                <i class="ti-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="total-amount text-center" data-title="Total">
+                                    <span>@string.Format("{0:0,0 vnđ}", item.Product.Current_price * item.Quantity)</span>
+                                    @{ total += item.Product.Current_price * item.Quantity;}
+                                </td>
+                                <td class="action text-center" data-title="Remove">
+                                    <a href="" onclick="deleteItem(@item.Product.Id_product)"><i class="ti-trash remove-icon"></i></a>
+                                </td>
+                            </tr>
+                        }
+                                        }
+
+                }
+            </tbody>
+        </table>
+
+        <!-- Total Amount -->
+        <div class="total-amount">
+            <div class="row">
+                <div class="col-lg-6 col-md-4 col-12">
+                    <p class="last">Tổng trị giá<span>@string.Format("{0:0,0 vnđ}", total)</span></p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                    <a href="/Home/Index" class="btn cont">Tiếp tục mua</a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                    <a href="/Checkout/Checkout" class="btn buy">Mua hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

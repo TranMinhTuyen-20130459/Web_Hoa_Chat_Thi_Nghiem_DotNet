@@ -1,0 +1,67 @@
+﻿@model Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Models.RegisterCustomerModel
+@{
+    ViewBag.Title = "Logout";
+    Layout = "~/Views/Share/LayoutLogin.cshtml";
+}
+<div class="breadcrumbs py-4">
+    <div class="container text-left">
+        <ul class="bread-list d-inline-block">
+            <li class="d-inline-block text-capitalize"><a href="/Home/Index">Trang chủ<i class="ti-arrow-right mx-2"></i></a></li>
+            <li class="d-inline-block text-capitalize"><a href="#">Đăng kí</a></li>
+        </ul>
+    </div>
+</div>
+<section class="form-input py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-12 text-center">
+                <img width="80%" src="~/Assets/shop/images/labs/login_start.jpg" />
+            </div>
+            <div class="col-lg-5 col-md-5 col-12">
+                <div class="h-100 d-flex align-items-center">
+                    @using (Html.BeginForm("registerCustomer", "Account", FormMethod.Post,
+                        new { @class = "m-0 p-5 text-center" }))
+                    {
+                        <h5 class="mb-4">Đăng Ký</h5>
+                        @Html.ValidationMessage("", new { @class = "text-danger notification-error" });
+                        <!--<input class="w-100 mb-3" type="text" placeholder="Email">-->
+                        @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger notification-error" })
+                        @Html.TextBoxFor(model => model.email, new
+
+                   {
+                       @class = "w-100 mb-3 input-login-field",
+                       @autofocus = "autofocus",
+                       @placeholder = "Email",
+                       @type = "email"
+                   })
+
+                        <!--<input class="w-100 mb-3" type="password" placeholder="Mật khẩu">-->
+                        @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger notification-error" })
+                        @Html.PasswordFor(model => model.password, new
+                   {
+                       @class = "w-100 mb-3 input-login-field",
+                       @placeholder = "Mật khẩu",
+                       @autocomplete = "off",
+                       @type = "password"
+                   })
+
+
+                        <!--<input class="w-100 mb-4" type="password" placeholder="Nhập lại mật khẩu">-->
+                        @Html.ValidationMessageFor(model => model.confirm_pass, "", new { @class = "text-danger notification-error" })
+                        @Html.PasswordFor(model => model.confirm_pass, new
+                   {
+                       @class = "w-100 mb-4 input-login-field",
+                       @placeholder = "Nhập lại mật khẩu",
+                       @autocomplete = "off",
+                       @type = "password"
+                   })
+                        <button class="next w-100 mb-3">Tiếp theo</button>
+                        <span class="shotcut">Bạn đã có tài khoản? <a href="/Account/Login">Đăng nhập</a></span>
+                    }
+                    <!--<form class="m-0 p-5 text-center">-->
+                    <!--</form>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

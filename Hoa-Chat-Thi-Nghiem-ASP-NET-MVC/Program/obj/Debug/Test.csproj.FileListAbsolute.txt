@@ -1,0 +1,157 @@
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Program.exe.config
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Program.exe
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Program.pdb
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Google.Protobuf.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Model.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Buffers.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Memory.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\ZstdNet.dll
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Model.pdb
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Model.dll.config
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.xml
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Google.Protobuf.pdb
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Google.Protobuf.xml
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.xml
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Buffers.xml
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Memory.xml
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Test.csproj.CopyComplete
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Program.exe
+C:\Users\tmt01\OneDrive\Máy tính\Git-Local\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Program.pdb
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Program.exe.config
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Program.exe
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Program.pdb
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\BouncyCastle.Crypto.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.SqlServer.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Google.Protobuf.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Hash.xxHash.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Model.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.EntityFramework.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Buffers.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Memory.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Numerics.Vectors.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\ZstdNet.dll
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Model.pdb
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Model.dll.config
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\BouncyCastle.Crypto.xml
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.xml
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.SqlServer.xml
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Google.Protobuf.pdb
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Google.Protobuf.xml
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.xml
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Hash.xxHash.xml
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.xml
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.EntityFramework.xml
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Buffers.xml
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Memory.xml
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Numerics.Vectors.xml
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Test.csproj.AssemblyReference.cache
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Test.csproj.SuggestedBindingRedirects.cache
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Test.csproj.CoreCompileInputs.cache
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Test.csproj.CopyComplete
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Program.exe
+E:\DevPrograms\GIT\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Program.pdb
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Program.exe.config
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Program.exe
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Program.pdb
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Google.Protobuf.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Model.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Buffers.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Memory.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\ZstdNet.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Model.pdb
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Model.dll.config
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Google.Protobuf.pdb
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Google.Protobuf.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Buffers.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Memory.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Test.csproj.CopyComplete
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Program.exe
+C:\Users\tmt01\OneDrive\Máy tính\Test\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Program.pdb
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Program.exe.config
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Program.exe
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Program.pdb
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Google.Protobuf.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Model.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.EntityFramework.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Buffers.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Memory.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\ZstdNet.dll
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Model.pdb
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Model.dll.config
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Google.Protobuf.pdb
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\Google.Protobuf.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\MySql.Data.EntityFramework.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Buffers.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Memory.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Test.csprojAssemblyReference.cache
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Test.csproj.CoreCompileInputs.cache
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Test.csproj.CopyComplete
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Program.exe
+C:\Users\tmt01\OneDrive\Máy tính\Test_.NET\ASP.NET-MVC5\Hoa-Chat-Thi-Nghiem-ASP-NET-MVC\Program\obj\Debug\Program.pdb

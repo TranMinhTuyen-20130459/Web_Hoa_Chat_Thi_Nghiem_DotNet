@@ -1,0 +1,140 @@
+﻿@using System.Collections;
+@using System.Collections.Generic;
+@using Model.entity;
+@model Hoa_Chat_Thi_Nghiem_ASP_NET_MVC.Models.ProductsModel
+@using PagedList;
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Danh sách sản phẩm";
+    Layout = "~/Views/Share/Layout.cshtml";
+    var listProduct = ViewBag.ListProducts as List<Product>;
+}
+<div class="breadcrumbs py-4">
+    <div class="container text-left">
+        <ul class="bread-list d-inline-block">
+            <li class="d-inline-block text-capitalize"><a href="/Home/Index">Trang chủ<i class="ti-arrow-right mx-2"></i></a></li>
+            <li class="d-inline-block text-capitalize"><a href="#">Danh sách sản phẩm</a></li>
+        </ul>
+    </div>
+</div>
+
+<section class="products">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-12">
+                <div class="shop-sidebar">
+                    <!-- Category -->
+                    <div class="single-widget category">
+                        <h3 class="title">Phân loại</h3>
+                        <ul class="category-list">
+                            <li class="mb-2"><a href="#">Acid và Bazo</a></li>
+                            <li class="mb-2"><a href="#">Oxit</a></li>
+                            <li class="mb-2"><a href="#">Thuốc thử</a></li>
+                            <li class="mb-2"><a href="#">Chất chỉ thị</a></li>
+                            <li class="mb-2"><a href="#">Giấy lọc</a></li>
+                            <li class="mb-2"><a href="#">Kim loại</a></li>
+                            <li><a href="#">Khí hiếm</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Price Filter -->
+                    <div class="single-widget range mt-4">
+                        <h3 class="title">Lọc theo giá</h3>
+                        <div class="price-filter d-block">
+                            <div class="price-filter-inner">
+                                <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-corner-all" style="width: 10%; left: 10%;"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 10%;"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style="left: 20%;"></span></div>
+                                <div class="price_slider_amount">
+                                    <div class="label-input mt-3">
+                                        <span>Khoảng:</span>
+                                        <input type="text" id="amount" name="price" placeholder="Nhập giá">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="check-box-list mt-3">
+                            <li class="mb-1">
+                                <label for="1">
+                                    <input id="1" type="checkbox">200,000đ - 500,000vnđ<span class="count">(13)</span>
+                                </label>
+                            </li>
+                            <li class="mb-1">
+                                <label for="2">
+                                    <input id="2" type="checkbox">500,000đ - 1,000,000vnđ<span class="count">(5)</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label for="3">
+                                    <input id="3" type="checkbox">1,000,000đ - 2,500,000vnđ<span class="count">(8)</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-8 col-12">
+                <!-- Shop Top -->
+                <div class="shop-top">
+                    <div class="shop-shorter float-left">
+                        <div class="single-shorter d-inline-block">
+                            <label>Sắp xếp theo: </label>
+                            <select style="display: none;">
+                                <option selected="selected">Tên</option>
+                                <option>Giá</option>
+                                <option>Kích thước</option>
+                            </select><div class="nice-select" tabindex="0"><span class="current">Tên</span><ul class="list"><li data-value="Tên" class="option selected">Tên</li><li data-value="Giá" class="option">Giá</li><li data-value="Kích thước" class="option">Kích thước</li></ul></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    @foreach (Product item in Model.ListOfProducts)
+                    {
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-product">
+                                <div class="product-img">
+                                    <a href="@Url.Action("ProductDetails","Products", new {id = item.Id_product}) ">
+                                        <img class="default-img" src="@item.Url_img_product" />
+                                    </a>
+                                </div>
+                                <div class="product-content">
+                                    <a href="@Url.Action("ProductDetails","Products", new {id = item.Id_product})">@item.Name_product</a>
+                                    <div class="rating">
+                                        @for (int i = 0; i < item.Star; i++)
+                                        {
+                                            <i class="yellow fa fa-star"></i>
+                                        }
+                                        @for (int i = item.Star; i < 5; i++)
+                                        {
+                                            <i class="fa fa-star"></i>
+                                        }
+                                    </div>
+                                    <div class="product-price">
+                                        @if (item.Listed_price != item.Current_price)
+                                        {
+                                            <span class="old">@string.Format("{0:0,0 vnđ}", item.Listed_price)  </span>
+                                            <br />
+                                            <span>@string.Format("{0:0,0 vnđ}", item.Current_price)</span>
+                                        }
+                                        else
+                                        {
+                                            <br />
+                                            <span>@string.Format("{0:0,0 vnđ}", item.Current_price)</span>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination d-flex justify-content-center mt-5">
+                    <div class="pagination-container">
+                         @Html.PagedListPager(Model.ListOfProducts, page => Url.Action("ListProducts", new { page }))
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
